@@ -1,0 +1,135 @@
+.submit-page {
+  #header {
+    height: 144px;
+  }
+
+  #header-bottom-left {
+    left: 50%;
+    margin-left: -262px;
+    top: 86px;
+  }
+
+  .content {
+    margin: 32px auto 0 auto;
+  }
+
+  .side,
+  .content h1,
+  #suggested-reddits {
+    display: none;
+  }
+
+  #newlink.submit.content {
+    margin: 0 auto;
+    width: 524px;
+
+    form .spacer + .spacer {
+      margin: 0;
+    }
+
+    ul.tabmenu.formtab {
+      background-color: $color-rich-blue;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+      padding: 0;
+      position: relative;
+    }
+
+    .tabmenu.formtab a {
+      border: none;
+      border-bottom: 4px solid transparent;
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.15s ease;
+      width: 262px;
+    }
+
+    .tabmenu.formtab .selected a {
+      background-color: transparent;
+      border-bottom: 4px solid;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .tabmenu.formtab a:hover {
+      color: #fff;
+    }
+  }
+
+  .formtabs-content {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .roundfield {
+    background-color: #fff;
+    border: none;
+    padding: 16px;
+    width: 524px;
+
+    .title {
+      color: $color-dark-grey;
+      text-transform: capitalize;
+    }
+  }
+
+  #url-field button {
+    background-color: #c3cfd6;
+  }
+
+  #newlink.submit.content .btn {
+    cursor: pointer;
+    font-family: Lato, arial, sans-serif;
+    font-size: 17px;
+    height: auto;
+    margin-bottom: 48px;
+    margin-top: 16px;
+    padding: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  #newlink.submit.content .btn::after {
+    content: $label-submit-button;
+    text-transform: none;
+  }
+
+  #newlink.submit.content .btn:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.48);
+  }
+
+  .footer-parent {
+    display: none;
+  }
+}
+
+.submit_text.enabled.roundfield {
+  background-color: $color-rich-blue;
+}
+
+.submit_text.enabled.roundfield .md {
+  color: #fff;
+}
+
+.submit_text ol,
+.submit_text ul {
+  margin-left: -1em;
+}
+
+.submit-page .infobar {
+  display: none !important;
+}
+
+.content.submit .info-notice {
+  background-color: #edf1f3;
+  border: none;
+  margin-bottom: 0;
+  padding: 16px;
+}

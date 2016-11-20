@@ -1,0 +1,45 @@
+.read-next {
+  border: 1px solid #edf1f3;
+  border-radius: 2px 2px 0 0;
+  height: 128px;
+  width: 320px;
+
+  .read-next-header {
+    background-color: #f2f7fa;
+    border-bottom: 1px solid #edf1f3;
+    color: $color-medium-grey;
+    padding: 8px 16px;
+  }
+
+  .read-next-nav {
+    top: 8px;
+  }
+
+  .read-next-button {
+    background-color: $color-rich-blue;
+    color: #fff;
+    font-family: monospace;
+    font-size: 10px;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+  }
+
+  .read-next-link {
+    height: inherit;
+  }
+
+  .read-next-header-title {
+    line-height: inherit;
+    top: 0;
+  }
+
+  .read-next-list {
+    padding: 8px 16px;
+  }
+
+  .read-next-meta {
+    color: $color-medium-grey;
+    line-height: 2;
+  }
+}

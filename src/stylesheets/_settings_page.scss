@@ -1,0 +1,85 @@
+.linefield {
+  background-color: #fff;
+  color: $color-lighter-grey;
+  margin: 0 0 16px 0;
+  padding: 8px 0;
+  width: 528px;
+
+  .title {
+    color: $color-link-default;
+    padding: 0;
+    text-transform: capitalize;
+  }
+
+  .linefield-content {
+    padding: 0;
+  }
+
+  .title::first-letter,
+  label::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.usertext .bottom-area a {
+  color: $color-lighter-grey;
+}
+
+.usertext .bottom-area a:hover {
+  color: $color-link-default;
+}
+
+.pretty-form {
+  padding-top: 24px;
+}
+
+.fancy-settings h1,
+.create-promotion h1 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.fancy-settings h1 strong {
+  color: rgba(255, 255, 255, 1);
+}
+
+.tabmenu {
+  border-bottom: 1px solid #edf1f3;
+  margin-bottom: 12px;
+
+  li {
+    margin: 0 !important;
+  }
+
+  li a {
+    background-color: transparent;
+    border: none;
+    color: $color-dark-grey;
+    font-size: 14px;
+  }
+
+  li.selected a {
+    background-color: transparent;
+    border: none;
+    color: $color-link-default;
+  }
+}
+
+.tabpane-content {
+  border: none;
+
+  .flairrow a.author {
+    color: $color-lighter-grey;
+  }
+
+  .tagline a {
+    color: $color-dark-grey;
+  }
+
+  .thing .title {
+    overflow: visible;
+  }
+}
+
+.fancy-settings .pretty-form {
+  padding-top: 0;
+}

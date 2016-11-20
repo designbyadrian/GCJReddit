@@ -1,0 +1,60 @@
+/* Wiki Page */
+.wiki-page .wikititle {
+  background-color: #fff;
+  padding: 9px 16px 10px 16px; 
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.wiki-page .pageactions {
+  background-color: #fff;
+  margin-left: 16px;
+  border-radius: 2px;
+  padding: 0px 16px;
+  border: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+}
+
+  .wiki-page .pageactions .wikiaction {
+    margin: 0;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 10px 16px 11px 16px;
+    color: $color-lighter-grey;
+  }
+
+    .wiki-page .pageactions .wikiaction-current {
+      padding: 10px 16px 9px 16px;
+      border-bottom: 2px solid $color-link-default;
+      color: $color-link-default;
+    }
+
+      .wiki-page .pageactions .wikiaction:hover, .wiki-page .pageactions .wikiaction-current:hover {background-color: rgba(0,0,0,0.05);}
+
+.wiki-page .wiki-page-content {
+  margin: 16px 0px 16px 0px;
+  background-color: #fff;
+  padding: 8px 0;
+}
+
+  .wiki-page .wiki-page-content .wiki>.toc>ul {
+    border: none;
+  }
+
+  .wiki-page .wiki-page-content .wiki.md {
+    color: $color-dark-grey;
+  }
+    .wiki-page .wiki-page-content .wiki.md h2 {color: $color-dark-grey;}
+
+
+    .wiki-page .wiki-page-content hr {
+      border-style: solid;
+      border-color: #edf1f3
+    }
+
+    .wiki-page .wiki-page-content em {color: $color-lighter-grey;}
+

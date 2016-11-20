@@ -1,0 +1,358 @@
+body.comments-page > .content {
+  margin-top: 8px;
+}
+
+.comments-page .link .usertext .md {
+  margin-bottom: 0;
+}
+
+.commentarea .panestack-title {
+  border-bottom: 0;
+  margin: 10px 0 0 0;
+  padding-left: 16px;
+
+  .title {
+    color: $color-grey;
+  }
+}
+
+.commentarea .menuarea {
+  margin: 0 0 0 0;
+  padding-left: 16px;
+
+  span.dropdown-title.lightdrop {
+    color: $color-lighter-grey;
+  }
+
+  span.dropdown-title.lightdrop::first-letter {
+    text-transform: capitalize;
+  }
+
+  .dropdown.lightdrop .selected {
+    background-image: none;
+    border: none;
+    color: $color-lighter-grey;
+    cursor: pointer;
+    font-weight: normal;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+  }
+
+  .dropdown.lightdrop .selected:hover {
+    color: #4f8ef7;
+  }
+
+  .dropdown.lightdrop .selected::after {
+    content: "▼";
+  }
+}
+
+.drop-choices.lightdrop {
+  border: none;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  z-index: 1001;
+}
+
+.drop-choices a.choice {
+  border-bottom: 1px solid #edf1f3;
+  padding: 12px 24px 12px 12px;
+  transition: all 0.1s ease;
+}
+
+.drop-choices form:last-of-type a.choice {
+  border-bottom: none;
+}
+
+.drop-choices a.choice:hover {
+  background-color: $color-rich-blue;
+  color: #fff;
+}
+
+.commentarea .menuarea .toggle a,
+.help-hoverable {
+  color: $color-lighter-grey;
+  font-weight: normal;
+}
+
+.commentarea .menuarea .toggle a:hover,
+.help-hoverable:hover {
+  color: $color-link-default;
+}
+
+.commentarea > .usertext {
+  background-color: #fafafa !important;
+  margin: -58px 0 16px 0;
+  overflow: visible;
+  padding: 64px 16px 16px 16px !important;
+}
+
+.usertext button {
+  margin: 4px 16px 8px 0;
+}
+
+.commentarea .usertext-edit {
+  max-width: 504px;
+  width: 100%;
+}
+
+.commentarea .usertext-edit textarea {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+.commentarea > .usertext textarea:not(:focus) {
+  background: url(%%commentboxbg%%) no-repeat 50% 50%;
+}
+
+.usertext .bottom-area {
+  width: 504px;
+}
+
+.usertext .bottom-area a.reddiquette {
+  color: $color-link-default;
+}
+
+.gold-accent.comment-visits-box {
+  background-color: #edf1f3;
+  border: 1px solid #d8e0e5;
+  border-radius: 2px;
+  color: $color-dark-grey;
+  margin: 0 0 12px 0;
+}
+
+/* Comments */
+
+.commentarea .sitetable {
+  box-shadow: none;
+  margin: 0;
+}
+
+.commentarea .thing {
+  margin: 0 0 8px 0;
+  padding: 8px 16px 8px 0;
+}
+
+.commentarea .child .thing {
+  box-shadow: none;
+  margin: 12px 0 0 0;
+  padding: 4px;
+}
+
+.commentarea .comment .midcol {
+  margin-right: 6px;
+  margin-top: 2px;
+  overflow: visible;
+  width: 32px;
+}
+
+.comment .child,
+.comment .showreplies {
+  border-left: 1px solid #edf1f3;
+  margin-top: 0;
+}
+
+/* Vote arrows */
+
+.comment .midcol {
+  margin-right: 0;
+  width: 24px;
+}
+
+.comment .midcol .arrow {
+  margin-bottom: 4px;
+  margin-left: 0;
+}
+
+.comment .entry .tagline {
+  color: $color-lighter-grey;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.comment .expand {
+  background-color: transparent;
+  color: $color-lighter-grey;
+  transition: all 0.15s ease;
+}
+
+.comment .expand:hover {
+  background-color: #edf1f3;
+  color: $color-lighter-grey;
+  text-decoration: none;
+}
+
+.comment.collapsed a.expand::after {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  color: transparent;
+  content: "ah ";
+  display: block;
+  height: 50px;
+  left: 16px;
+  margin-top: -34px;
+  position: absolute;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc(100% - 368px);
+}
+
+.comment.collapsed a.expand:hover::after {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.comment .author {
+  color: $color-dark-grey;
+  font-weight: bold;
+  margin-right: 0;
+}
+
+.comment .author:hover {
+  color: $color-link-default;
+  text-decoration: none;
+}
+
+.tagline .moderator,
+.green {
+  color: $color-green !important;
+  font-weight: bold;
+}
+
+.tagline .submitter {
+  color: $color-link-default;
+  font-weight: bold;
+}
+
+/* RES Fixes */
+
+.res .thing .tagline .author.submitter {
+  background-color: #4f8ef7 !important;
+  border-radius: 1px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  padding: 1px 4px;
+  transition: all 0.15s ease;
+}
+
+.res .thing .tagline .author.submitter:hover {
+  background-color: #4f8ef7 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.comment .score {
+  color: $color-medium-grey;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.comment .score::before {
+  content: "• ";
+  line-height: 14px;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+/* Comment Body Text */
+
+.comment .usertext .md {
+  color: $color-dark-grey;
+}
+
+.md {
+  a {
+    color: $color-link-default;
+
+    &::visited {
+      color: #7d5d8a;
+    }
+  }
+
+  pre {
+    padding: 8px;
+  }
+
+  blockquote {
+    border-left: 2px solid #edf1f3;
+    color: $color-medium-grey;
+  }
+
+  h1,
+  h2 {
+    border: none;
+    color: $color-dark-grey;
+    margin: 0.5em 0 0.25em 0;
+  }
+
+  h3 {
+    color: $color-dark-grey;
+    margin: 16px 0 0 0;
+  }
+}
+
+/* Deleted comment */
+
+.usertext.grayed .usertext-body {
+  background-color: transparent;
+  margin: 4px 0;
+  padding: 0;
+  text-transform: italic;
+}
+
+/* Reply / Share / report */
+
+.comment .flat-list li a {
+  color: $color-lighter-grey;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.comment .flat-list li a:hover {
+  color: $color-link-default;
+  text-decoration: none;
+}
+
+.comment .flat-list li a[onclick*="reply"] {
+  color: $color-link-default;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.deepthread a {
+  color: $color-link-default;
+}
+
+.morecomments a {
+  color: $color-medium-grey;
+}
+
+/* Sidebar stuff */
+
+.comments-page .side {
+  margin-top: 400px;
+
+  .linkinfo {
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
+    padding: 16px;
+    position: absolute;
+    top: 494px;
+    width: 320px;
+  }
+
+  .linkinfo .date {
+    color: $color-lighter-grey;
+  }
+
+  .linkinfo .date::first-letter {
+    text-transform: capitalize;
+  }
+
+  .linkinfo .score {
+    color: $color-dark-grey;
+  }
+}
+
+.res.comments-page .side {
+  margin-top: 414px;
+}

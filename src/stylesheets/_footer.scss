@@ -1,0 +1,36 @@
+.footer-parent {
+  background-image: url(%%footer%%);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin-top: 192px;
+  padding: 528px 0 64px 0;
+}
+
+.footer {
+  background-color: rgba(43, 51, 58, 0.64);
+  border: 0 solid;
+  border-radius: 2px;
+  max-width: 640px;
+  padding: 16px;
+}
+
+.footer .col {
+  border: none;
+  padding: 0 24px;
+}
+
+.flat-vert.title,
+.bottommenu a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bottommenu {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.debuginfo,
+#hsts_pixel {
+  display: none;
+}

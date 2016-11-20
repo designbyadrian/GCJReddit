@@ -1,0 +1,36 @@
+{
+  "name": "nauty",
+  "version": "0.1.0",
+  "description": "A Sass fork of Naut, a popular CSS theme for reddit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dobs/nauty.git"
+  },
+  "keywords": [
+    "naut",
+    "nauty",
+    "reddit",
+    "subreddit"
+  ],
+  "author": "Daniel O'Brien <dan@dobs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dobs/nauty/issues"
+  },
+  "homepage": "https://github.com/dobs/nauty",
+  "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "csswring": "^4.1.1",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.1.1",
+    "postcss-reporter": "^1.3.0",
+    "postcss-scss": "^0.1.3",
+    "stylelint": "^3.2.0",
+    "stylelint-config-standard": "^0.1.0"
+  }
+}

@@ -1,0 +1,204 @@
+#header {
+  background-color: #30333a;
+  background-image: url(%%headerimg%%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  height: 196px;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Subreddits Bar */
+
+#sr-header-area {
+  background-color: rgba(0, 0, 0, 0.08);
+  border: none;
+  height: 24px;
+  line-height: 23px;
+  transition: all 0.15s ease;
+
+  .width-clip {
+    right: 300px;
+  }
+
+  .sr-list {
+    margin-right: 48px;
+  }
+
+  .sr-bar a,
+  #sr-more-link,
+  .separator,
+  .dropdown.srdrop .selected {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.15s ease;
+  }
+
+  &:hover {
+    .sr-bar a,
+    #sr-more-link,
+    .seperator,
+    .dropdown.srdrop .selected {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .sr-bar a:hover,
+  #sr-more-link:hover,
+  .dropdown.srdrop .selected:hover {
+    background-color: transparent;
+    border: none;
+    transition: all 0.15s ease;
+  }
+
+  a.random.choice {
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 2px;
+    position: relative;
+  }
+
+  .dropdown.srdrop .selected {
+    background-image: none;
+    margin: 0 12px 0 8px;
+    padding: 0;
+  }
+
+  .dropdown.srdrop .selected:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown.srdrop .selected::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 4px;
+    position: relative;
+  }
+
+  /* My Subreddits Dropdown */
+
+  .drop-choices.srdrop {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .drop-choices a.choice {
+    border-bottom: 1px solid #edeeee;
+    color: $color-grey;
+    padding: 2px;
+  }
+
+  .drop-choices a.choice:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+body:not(.loggedin) #sr-header-area .width-clip {
+  right: 340px;
+}
+
+@import "user_bar";
+
+/* Header Start */
+
+/* Snoo */
+
+#header-img.default-header,
+#header-img {
+  background-image: url(%%spritesheet%%);
+  background-position: -80px 0;
+  font-size: 0;
+  height: 42px;
+  margin: 0 8px 0 0;
+  padding-left: 42px;
+  vertical-align: top;
+  width: 0;
+  z-index: 99;
+}
+
+#header-img.default-header:hover,
+#header-img:hover {
+  background-position: -122px 0;
+}
+
+/* Reddit Name */
+
+#header .pagename {
+  font-size: 0;
+
+  a {
+    color: #fff;
+    display: inline-block;
+    font-family: Lato, arial, sans-serif;
+    font-size: 42px;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 42px;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Tabmenu (hot/new/top) */
+
+#header-bottom-left {
+  left: 16px;
+  position: absolute;
+  right: 384px;
+  top: 100px;
+}
+
+#header .tabmenu {
+  border: none;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  margin: 12px 0 0 0;
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.24);
+    content: "";
+    display: block;
+    height: 42px;
+    left: -16px;
+    position: absolute;
+    right: -384px;
+    z-index: -1;
+  }
+
+  li a {
+    color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    font-family: Lato, arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 0 16px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  li a:hover {
+    color: #fff;
+  }
+
+  li:first-of-type a {
+    margin-left: 0;
+  }
+
+  li.selected a {
+    border-bottom: 2px solid;
+    color: #fff;
+    padding-bottom: 4px;
+  }
+}
+
+.listing-page .tabmenu li > a[href$="/controversial/"],
+.wiki-page    .tabmenu li > a[href$="/controversial/"],
+.listing-page .tabmenu li > a[href$="/promoted/"],
+.wiki-page    .tabmenu li > a[href$="/promoted/"] {
+  display: none !important;
+}

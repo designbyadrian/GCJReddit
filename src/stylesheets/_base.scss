@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: $color-link-default;
+  transition: color 0.15s ease;
+}
+
+::selection {
+  background-color: $color-selection;
+  color: #fff;
+  text-shadow: none;
+}
+
+:focus {
+  outline: none !important;
+}
+
+body {
+  background-color: $color-background;
+  min-width: 920px;
+  overflow-x: hidden;
+
+  .content .text,
+  .content textarea,
+  .content input[type=text],
+  .content input[type=password],
+  .side .spacer input,
+  .content input[type=url] {
+    background-color: #fff;
+    border: 1px solid #c3cfd6;
+    box-shadow: none;
+    color: $color-medium-grey;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      border-color: $color-medium-grey;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-link-default;
+      color: $color-dark-grey;
+    }
+  }
+
+  .btn,
+  button {
+    background-color: $color-button;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 1.5px 0 rgba (0, 0, 0, 0.12), 0 0 4px 0 rgba (0, 0, 0, 0.12);
+    color: $color-button-text;
+    cursor: default;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    margin: 4px 16px 4px 0;
+    padding: 2px 18px;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: lighten($color-button, 6%);
+      box-shadow: 0 4px 5px 0 rgba (0, 0, 0, 0.14), 0 1px 10px 0 rgba (0, 0, 0, 0.12), 0 2px 4px -1px rgba (0, 0, 0, 0.2);
+      color: $color-button-text;
+    }
+
+    &:active {
+      background-color: darken($color-button, 6%);
+      box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+      color: $color-button-text;
+    }
+  }
+}

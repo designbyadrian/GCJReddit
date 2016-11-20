@@ -1,0 +1,78 @@
+/* Experimental Toast Animation */
+
+#mail.havemail::before {
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-name: toast;
+  animation-timing-function: ease;
+}
+
+#mail.havemail:hover::before {
+  animation-play-state: paused;
+}
+
+@keyframes toast {
+  0% {
+    opacity: 0;
+    transform: translateY(76px);
+    transform: translateY(76px);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(76px);
+    transform: translateY(76px);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  27% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  92% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  97% {
+    opacity: 1;
+    transform: translateY(16px);
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(76px);
+    transform: translateY(76px);
+  }
+}
+
+@keyframes upvote {
+  0% {
+    opacity: 1;
+    transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+}
