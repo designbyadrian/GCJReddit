@@ -32,7 +32,7 @@
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   content: " ";
   display: block;
-  height: 76px;
+  height: 90px;
   margin-left: -16px;
   margin-top: -16px;
   position: absolute;
@@ -65,7 +65,11 @@ div.titlebox span.word {
 }
 
 .titlebox .users-online {
+  position: absolute;
   display: inline;
+  top: 356px;
+  margin: 0;
+  z-index: 100;
 }
 
 .titlebox .users-online::before {
@@ -74,20 +78,6 @@ div.titlebox span.word {
 
 div.titlebox span.number::after {
   content: $label-subreddit-readers;
-}
-
-.titlebox .users-online .number {
-  font-style: italic;
-}
-
-.titlebox .users-online .number::before {
-  background-image: url(%%spritesheet%%);
-  background-position: -64px -36px;
-  content: "";
-  display: inline-block;
-  height: 9px;
-  margin-right: 8px;
-  width: 16px;
 }
 
 .titlebox .users-online .number::after {
@@ -131,7 +121,7 @@ div.titlebox span.number::after {
   /* Subscribe */
 
   .active.add {
-    background-color: $color-green;
+    background-color: $color-blue;
     color: #fff;
 
     &:hover {
@@ -301,37 +291,15 @@ div.titlebox span.number::after {
 
 .morelink a {
   color: #fff;
-  font-size: 0;
+  font-size: 14px;
   font-weight: normal;
   letter-spacing: 0;
 }
 
-.sidebox.submit.submit-text .morelink a::after {
-  content: $label-submit-text;
-  font-size: 14px;
-}
 
-.sidebox.submit.submit-link .morelink a::after {
-  content: $label-submit-link;
-  font-size: 14px;
-}
-
-.side .sidebox.submit-text .morelink::before,
-.side .sidebox.submit-link .morelink::after {
-  background-color: rgba(0, 0, 0, 0.08);
-  border-radius: 2px;
-  color: rgba(0, 0, 0, 0.32);
-  content: $label-submit-inactive;
-  font-weight: normal;
-  left: -168px;
-  position: absolute;
-  top: 0;
-  width: 152px;
-  z-index: -1;
-}
-
-.side .sidebox.submit-link .morelink::after {
-  left: 168px;
+.side .sidebox.submit-text .morelink,
+.side .sidebox.submit-link .morelink {
+  @include hover-popup($label-submit-hover,$position:"left");
 }
 
 /* Restricted button */
@@ -376,15 +344,16 @@ div.titlebox span.number::after {
 
 /* Titlebox "Info" */
 
-.titlebox::before {
-  color: $color-dark-grey;
-  content: $label-subreddit-info;
-  display: block;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 8px 0;
-}
+// .titlebox::before {
+//   color: $color-dark-grey;
+//   content: $label-subreddit-info;
+//   display: block;
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 18px;
+//   line-height: 24px;
+//   margin: 0 0 8px 0;
+//   text-align: center;
+// }
 
 .titlebox .tagline {
   font-size: 12px;
@@ -440,6 +409,35 @@ div.titlebox span.number::after {
     font-size: 13px;
     line-height: 1.45;
   }
+
+  ol {
+    padding-left: 20px;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1em;
+
+    li {
+      padding-left: 20px;
+      min-height: 16px;
+      margin-bottom: 0.5em;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url(%%heads%%) !important;
+        background-size: 64px 64px;
+      }
+    }
+  }
 }
 
 .side .titlebox .md h1 {
@@ -449,6 +447,20 @@ div.titlebox span.number::after {
 
 .side .titlebox .md h2 {
   margin: 16px 0 2px 0;
+  text-align: center;
+  padding-top: 36px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(%%heads%%) !important;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;
+  }
 }
 
 /* Buttonstyle H3 */

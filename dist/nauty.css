@@ -26,6 +26,17 @@
 .arrow.downmod {
   background-position: -96px -0px; }
 
+/* SIDEBAR HEADER FACES - see "heads.png" */
+.side .titlebox .md h2:first-of-type::before {
+  background-position: -0px -32px; }
+
+.side .titlebox .md h2::before {
+  background-position: -32px -32px; }
+
+/* BULLET LIST FACES - see "heads.png" */
+.side .md ul li:before {
+  background-position: -32px -0px; }
+
 /* MOD FLAIRS */
 /* Generic submitter label */
 .author.submitter:before {
@@ -559,7 +570,7 @@ a {
   outline: none !important; }
 
 body {
-  background-color: #eee;
+  background-color: #D8D9DA;
   min-width: 920px;
   overflow-x: hidden; }
   body .content .text,
@@ -1012,7 +1023,7 @@ body > .content .link .rank,
     -webkit-animation: vote 0.4s ease-out forwards;
             animation: vote 0.4s ease-out forwards; }
   .arrow.down::after {
-    background-color: rgba(79, 77, 192, 0);
+    background-color: rgba(115, 132, 145, 0);
     border: none;
     border-radius: 2px;
     color: rgba(255, 255, 255, 0);
@@ -1020,23 +1031,24 @@ body > .content .link .rank,
     display: block;
     font-size: 13px;
     font-weight: normal;
+    line-height: 1em;
     letter-spacing: 1px;
+    position: absolute;
+    left: 0;
     margin-left: 32px;
-    margin-top: -6px;
     padding: 12px;
     pointer-events: none;
-    position: absolute;
     text-align: center;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     visibility: hidden;
-    z-index: 1000; }
+    z-index: 1000;
+    white-space: nowrap; }
   .arrow.down:hover::after {
-    background-color: rgba(79, 77, 192, 0.9);
+    background-color: rgba(115, 132, 145, 0.9);
     color: #fff;
-    margin-left: 48px;
     visibility: visible; }
-  .arrow.downmod:focus::after {
+  .arrow.down:focus::after {
     visibility: hidden; }
 
 /* Thumbnails */
@@ -1368,21 +1380,15 @@ body .content .sitetable .link .title a:hover {
 
 /* Linkflairs */
 .linkflairlabel {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 32px;
   background-color: #738491;
-  border: 0 solid;
-  border-radius: 1px;
-  color: #fff;
-  cursor: default;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  height: 18px;
-  padding: 1px 6px 1px 6px;
-  position: relative;
-  top: -2px;
-  vertical-align: middle; }
+  color: #fff !important;
+  margin-bottom: -4px;
+  margin-left: 0.5em; }
+  .linkflairlabel:hover {
+    background-color: #677783; }
 
 .linkflair-mod .linkflairlabel {
   background-color: #26c555;
@@ -1872,7 +1878,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   content: " ";
   display: block;
-  height: 76px;
+  height: 90px;
   margin-left: -16px;
   margin-top: -16px;
   position: absolute;
@@ -1900,7 +1906,11 @@ div.titlebox span.word {
   display: none; }
 
 .titlebox .users-online {
-  display: inline; }
+  position: absolute;
+  display: inline;
+  top: 356px;
+  margin: 0;
+  z-index: 100; }
 
 .titlebox .users-online::before {
   display: none; }
@@ -1908,20 +1918,8 @@ div.titlebox span.word {
 div.titlebox span.number::after {
   content: " shills waiting for Half-Life 3"; }
 
-.titlebox .users-online .number {
-  font-style: italic; }
-
-.titlebox .users-online .number::before {
-  background-image: url(%%spritesheet%%);
-  background-position: -64px -36px;
-  content: "";
-  display: inline-block;
-  height: 9px;
-  margin-right: 8px;
-  width: 16px; }
-
 .titlebox .users-online .number::after {
-  content: " Seanpologists"; }
+  content: " Seanpologists online"; }
 
 .titlebox .users-online,
 .titlebox .number {
@@ -1952,7 +1950,7 @@ div.titlebox span.number::after {
     .titlebox .fancy-toggle-button .active:active {
       box-shadow: 0 0 0 transparent; }
   .titlebox .fancy-toggle-button .active.add {
-    background-color: #26c555;
+    background-color: #2994d6;
     color: #fff; }
     .titlebox .fancy-toggle-button .active.add:hover {
       background-color: #36bb6f; }
@@ -2103,33 +2101,44 @@ div.titlebox span.number::after {
 
 .morelink a {
   color: #fff;
-  font-size: 0;
+  font-size: 14px;
   font-weight: normal;
   letter-spacing: 0; }
 
-.sidebox.submit.submit-text .morelink a::after {
-  content: "Preorder";
-  font-size: 14px; }
-
-.sidebox.submit.submit-link .morelink a::after {
-  content: "Do not";
-  font-size: 14px; }
-
-.side .sidebox.submit-text .morelink::before,
+.side .sidebox.submit-text .morelink::after,
 .side .sidebox.submit-link .morelink::after {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(115, 132, 145, 0);
+  border: none;
   border-radius: 2px;
-  color: rgba(0, 0, 0, 0.32);
-  content: "N/A";
+  color: rgba(255, 255, 255, 0);
+  content: "Complain about video games";
+  display: block;
+  font-size: 13px;
   font-weight: normal;
-  left: -168px;
+  line-height: 1em;
+  letter-spacing: 1px;
   position: absolute;
-  top: 0;
-  width: 152px;
-  z-index: -1; }
+  right: 0;
+  margin-right: 0px;
+  margin-top: 10px;
+  padding: 12px;
+  pointer-events: none;
+  text-align: center;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  visibility: hidden;
+  z-index: 1000;
+  white-space: nowrap; }
 
-.side .sidebox.submit-link .morelink::after {
-  left: 168px; }
+.side .sidebox.submit-text .morelink:hover::after,
+.side .sidebox.submit-link .morelink:hover::after {
+  background-color: rgba(115, 132, 145, 0.9);
+  color: #fff;
+  visibility: visible; }
+
+.side .sidebox.submit-text .morelink:focus::after,
+.side .sidebox.submit-link .morelink:focus::after {
+  visibility: hidden; }
 
 /* Restricted button */
 .disabled .morelink {
@@ -2162,15 +2171,6 @@ div.titlebox span.number::after {
   margin-right: -3px; }
 
 /* Titlebox "Info" */
-.titlebox::before {
-  color: #292f34;
-  content: "Objectively";
-  display: block;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 8px 0; }
-
 .titlebox .tagline {
   font-size: 12px;
   margin: 0; }
@@ -2215,12 +2215,47 @@ div.titlebox span.number::after {
   font-size: 13px;
   line-height: 1.45; }
 
+.side .md ol {
+  padding-left: 20px;
+  margin-bottom: 1em; }
+
+.side .md ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em; }
+  .side .md ul li {
+    padding-left: 20px;
+    min-height: 16px;
+    margin-bottom: 0.5em;
+    position: relative; }
+    .side .md ul li:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url(%%heads%%) !important;
+      background-size: 64px 64px; }
+
 .side .titlebox .md h1 {
   line-height: 18px;
   margin: 0.5em 0 0 0 !important; }
 
 .side .titlebox .md h2 {
-  margin: 16px 0 2px 0; }
+  margin: 16px 0 2px 0;
+  text-align: center;
+  padding-top: 36px;
+  position: relative; }
+  .side .titlebox .md h2::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(%%heads%%) !important;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px; }
 
 /* Buttonstyle H3 */
 .side .titlebox .md h3 a {

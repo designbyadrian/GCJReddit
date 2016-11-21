@@ -93,3 +93,49 @@ $lighnessChange: 50%;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
+
+@mixin hover-popup($text,$position:"left") {
+  &::after {
+    background-color: rgba($color-popup-background, 0);
+    border: none;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0);
+    content: $text;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1em;
+    letter-spacing: 1px;
+
+    position: absolute;
+    @if ($position == "right") {
+      left: 0;
+      margin-left: 32px;
+
+    } @else {
+      right: 0;
+      margin-right: 0px;
+      margin-top: 10px;
+    }
+
+    padding: 12px;
+    pointer-events: none;
+
+    text-align: center;
+    transition: all 0.25s ease;
+    visibility: hidden;
+    z-index: 1000;
+
+    white-space: nowrap;
+  }
+
+  &:hover::after {
+    background-color: rgba($color-popup-background, 0.9);
+    color: $color-popup-text;
+    visibility: visible;
+  }
+
+  &:focus::after {
+    visibility: hidden;
+  }
+}

@@ -87,37 +87,10 @@ body > .content .link .rank,
 
   /* Hover Message on Downvote */
 
-  &.down::after {
-    background-color: rgba($color-downvote-background, 0);
-    border: none;
-    border-radius: 2px;
-    color: rgba(255, 255, 255, 0);
-    content: $label-downvote;
-    display: block;
-    font-size: 13px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin-left: 32px;
-    margin-top: -6px;
-    padding: 12px;
-    pointer-events: none;
-    position: absolute;
-    text-align: center;
-    transition: all 0.25s ease;
-    visibility: hidden;
-    z-index: 1000;
+  &.down {
+    @include hover-popup($label-downvote,"right");
   }
 
-  &.down:hover::after {
-    background-color: rgba($color-downvote-background, 0.9);
-    color: $color-downvote-text;
-    margin-left: 48px;
-    visibility: visible;
-  }
-
-  &.downmod:focus::after {
-    visibility: hidden;
-  }
 }
 
 /* Thumbnails */
@@ -446,21 +419,9 @@ body .content .sitetable .link .title a:hover {
 /* Linkflairs */
 
 .linkflairlabel {
-  background-color: $color-link-flair;
-  border: 0 solid;
-  border-radius: 1px;
-  color: $color-link-flair-text;
-  cursor: default;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  height: 18px;
-  padding: 1px 6px 1px 6px;
-  position: relative;
-  top: -2px;
-  vertical-align: middle;
+  @include base-flair($color-link-flair);
+  margin-bottom: -4px;
+  margin-left: 0.5em;
 }
 
 .linkflair-mod .linkflairlabel {

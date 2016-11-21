@@ -28,3 +28,19 @@
   &.upmod {background-position: -0px -0px;}
   &.downmod {background-position: -96px -0px;}
 }
+
+/* SIDEBAR HEADER FACES - see "heads.png" */
+
+.side .titlebox .md h2:first-of-type::before {
+  background-position: -0px -32px;
+}
+
+.side .titlebox .md h2::before {
+  background-position: -32px -32px;
+}
+
+/* BULLET LIST FACES - see "heads.png" */
+
+.side .md ul li:before {
+  background-position: -32px -0px;
+}
