@@ -8,7 +8,7 @@ body > .content {
 
 .link {
   margin: 0;
-  padding: 16px 0;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -32,7 +32,7 @@ body > .content .link .rank,
   .score {
     font-size: 12px;
     line-height: 16px;
-    margin: 1px -100% 1px -100%;
+    margin: 0px -100% 0px -100%;
     text-align: center;
 
     &.likes {
@@ -47,55 +47,42 @@ body > .content .link .rank,
 
 .arrow {
   background-color: transparent;
-  background-image: url(%%spritesheet%%) !important;
-  border-radius: 2px;
+  background-image: url(%%heads%%) !important;
   margin: 0 0 0 0;
-  transition: background-color 0.25s ease;
-  width: 33px;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
+  width: 32px;
+  height: 22px;
 
   /* Upvotes */
 
   &.up {
-    background-position: 0 -80px;
-    height: 20px;
+    background-position: 0 -96px;
     transition: background-color 0.25s ease;
   }
 
   &.upmod {
-    background-position: -32px -80px;
-    height: 20px;
+    height: 32px;
+    margin-top: -10px;
     position: relative;
   }
 
-  &.upmod:focus::after {
-    animation: upvote 0.35s ease-out forwards;
-    background-color: darken($color-upvote, 5%);
-    border-radius: 28px;
-    bottom: -3px;
-    content: " ";
-    height: 28px;
-    left: 2px;
-    opacity: 1;
-    position: absolute;
-    width: 28px;
-    z-index: 100;
+  &.upmod:focus {
+    animation: vote 0.4s ease-out forwards;
   }
 
   /* Downvotes */
 
   &.down {
-    background-position: -64px -80px;
-    height: 20px;
+    background-position: -32px -108px;
     transition: background-color 0.25s ease;
   }
 
   &.downmod {
-    background-position: 0 -100px;
-    height: 20px;
+    height: 32px;
+    margin-bottom: -10px;
+  }
+
+  &.downmod:focus {
+    animation: vote 0.4s ease-out forwards;
   }
 
   /* Hover Message on Downvote */
@@ -127,13 +114,17 @@ body > .content .link .rank,
     margin-left: 48px;
     visibility: visible;
   }
+
+  &.downmod:focus::after {
+    visibility: hidden;
+  }
 }
 
 /* Thumbnails */
 
 .thumbnail {
   height: 56px;
-  margin: 0 16px 0 0;
+  margin: 0 10px 0 0;
   width: 80px;
 }
 
@@ -573,7 +564,7 @@ ul.report-reasons {
 .thing.link.stickied a.title,
 .thing.link.stickied a,
 .thing.link.stickied .entry li .comments {
-  color: $color-stickied !important;
+  color: $color-stickied;
 }
 
 .thing.link.stickied .expando-button:hover {

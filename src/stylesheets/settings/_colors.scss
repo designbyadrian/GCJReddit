@@ -1,0 +1,44 @@
+// Color Settings.
+
+$color-slate:  hsl(208, 56%, 20%);
+$color-blue:   hsl(203, 68%, 50%);
+$color-red:    hsl(342, 87%, 34%);
+$color-green:  hsl(138, 68%, 46%);
+$color-purple: hsl(264, 67%, 50%);
+$color-orange: hsl(41, 76%, 47%);
+$color-yellow: hsl(55, 67%, 46%);
+$color-grey: #4d5763;
+$color-dark-grey: #292f34;
+$color-lighter-grey: #98abba;
+$color-medium-grey: #738491;
+
+$white: #fff;
+$black: #1f1f1f;
+
+// Semantic colors.
+$color-background: #eee;
+$color-button-text: #fff;
+$color-button: $color-grey;
+$color-downvote-background: #4f4dc0;
+$color-downvote-text: #fff;
+$color-downvote: #5c5bd7;
+$color-infobar-text: #fff;
+$color-infobar: $color-grey;
+$color-link-default: $color-blue;
+$color-link-flair-mod-text: #fff;
+$color-link-flair-mod: $color-green;
+$color-link-flair-text: #fff;
+$color-link-flair: $color-medium-grey;
+$color-link-visited: $color-medium-grey;
+$color-locked: $color-green;
+$color-nsfw-text: #fff;
+$color-nsfw: #ea4876;
+$color-pretty-button-negative: #fb797e;
+$color-pretty-button-neutral: #ddd;
+$color-pretty-button-positive: #1ecd97;
+$color-pretty-button-text: #fff;
+$color-selection: $color-grey;
+$color-stickied: $color-green;
+$color-toggle-text: #fff;
+$color-toggle: #4f8ef7;
+$color-upvote: #ff6422;

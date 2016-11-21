@@ -65,7 +65,7 @@ body.comments-page > .content {
 }
 
 .drop-choices a.choice:hover {
-  background-color: $color-rich-blue;
+  background-color: $color-grey;
   color: #fff;
 }
 
@@ -212,16 +212,16 @@ body.comments-page > .content {
   text-decoration: none;
 }
 
-.tagline .moderator,
-.green {
-  color: $color-green !important;
-  font-weight: bold;
-}
-
-.tagline .submitter {
-  color: $color-link-default;
-  font-weight: bold;
-}
+// .tagline .moderator,
+// .green {
+//   color: $color-green !important;
+//   font-weight: bold;
+// }
+//
+// .tagline .submitter {
+//   color: $color-link-default;
+//   font-weight: bold;
+// }
 
 /* RES Fixes */
 

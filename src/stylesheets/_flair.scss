@@ -1,26 +1,11 @@
 .flair {
-  background-color: transparent;
+  display: inline-block;
   border: none;
   border-radius: 0;
-  color: $color-lighter-grey;
-  font-family: arial, sans-serif;
-  font-size: 12px;
   font-weight: normal;
   margin-right: inherit;
   padding-left: 0;
-}
-
-.link .flair {
-  font-size: 12px;
-}
-
-.flair::before {
-  content: "- ";
-  height: auto;
-  margin-left: 4px;
-  margin-right: 3px;
-}
-
-.side .flair::before {
-  margin-left: 0;
+  margin: 0 0.5em -7px 0.5em;
+  font-size: 1em;
+	background: url(%%flairs%%) no-repeat -9999px;
 }

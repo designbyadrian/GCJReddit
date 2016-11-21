@@ -1,0 +1,95 @@
+@function text-by-bg-color($bgColor) {
+  @if (lightness($bgColor) > 70) {
+    @return darken($bgColor,40%);
+
+  } @else if(lightness($bgColor) < 30){
+    @return lighten($bgColor,40%);
+
+  } @else {
+    @return #fff;
+  }
+}
+
+$lighnessChange: 50%;
+
+@mixin moderator-label($nickname,$primaryColor,$secondaryColor:null) {
+  .author[href$="#{"/"+$nickname}"]:before {
+    @include base-flair-handle($primaryColor)
+    content: "Mod ";
+    text-indent: 0px;
+  }
+
+  @if ($secondaryColor) {
+    .author[href$="#{"/"+$nickname}"]:before {
+      background: $secondaryColor;
+      color: text-by-bg-color($secondaryColor);
+    }
+  }
+
+  .author[href$="#{"/"+$nickname}"] {
+    @include base-flair($primaryColor);
+  }
+}
+
+@mixin op-label($bgColor) {
+  .author.submitter:before {
+    @include base-flair-handle($bgColor)
+    content: "OP ";
+    text-indent: 0px;
+  }
+
+  .author.submitter {
+    @include base-flair($bgColor);
+  }
+}
+
+@mixin distinguished-label($bgColor) {
+  .stickied .author:before,
+  .author.moderator:before {
+    @include base-flair-handle($bgColor)
+    content: "Mod ";
+    text-indent: 0px;
+  }
+
+  .stickied .author,
+  .author.moderator {
+    @include base-flair($bgColor);
+  }
+}
+
+@mixin user-label($bgColor) {
+  @include base-flair($bgColor);
+  padding: 3px 6px;
+
+  &[title]:before {
+    content: '';
+  }
+}
+
+@mixin base-flair($bgColor) {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 32px;
+  background-color: $bgColor;
+  color: text-by-bg-color($bgColor) !important;
+
+  &:hover {
+    background-color: darken($bgColor,5%);
+  }
+}
+
+@mixin base-flair-handle($bgColor) {
+  content: '-';
+  text-indent: -100px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: text-by-bg-color($bgColor) !important;
+  display: inline-block;
+  padding: 6px 5px 4px 7px;
+  margin: -4px 6px -6px -6px;
+  background-color: darken($bgColor,5%);
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}

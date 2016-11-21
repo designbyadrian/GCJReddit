@@ -1,3 +1,8 @@
+GCJ Theme
+=====
+
+Based on Nauty by Axel--. Styles reordered to assist non-tech-savvy mods to edit CSS.
+
 Nauty
 =====
 
@@ -25,7 +30,7 @@ originals.
 Customization
 =============
 
-Many settings can be found in `src/stylesheets/_settings.scss`, such as colors, labels, and eventually feature toggles.
+Many settings can be found in `src/stylesheets/settings/`, such as colors, labels, and eventually feature toggles.
 
 Building
 ========

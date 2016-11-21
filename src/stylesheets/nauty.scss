@@ -1,4 +1,14 @@
-@import 'settings';
+/*
+ * GCJ Theme based on Naut.
+ * Read more on https://github.com/designbyadrian/GCJReddit
+ */
+
+/* --- custom rules --- */
+
+@import 'settings/settings';
+
+/* --- end of custom rules --- */
+
 @import 'base';
 @import 'header';
 @import 'body';

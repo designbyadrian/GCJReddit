@@ -17,12 +17,13 @@ function decharset(css) {
 gulp.task('build', function () {
   var processors = [
     autoprefixer,
-    csswring,
     decharset
   ];
 
   gulp.src('src/stylesheets/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      style: 'expanded'
+    }).on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest('dist'));
 });

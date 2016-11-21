@@ -8,6 +8,7 @@
   right: 0;
   top: 0;
   width: auto;
+  z-index: 3;
 }
 
 body:not(.loggedin) #header-bottom-right {

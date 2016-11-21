@@ -2,8 +2,8 @@
   background-color: #30333a;
   background-image: url(%%headerimg%%);
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   border: none;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
   height: 196px;
@@ -19,6 +19,12 @@
   height: 24px;
   line-height: 23px;
   transition: all 0.15s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
 
   .width-clip {
     right: 300px;
@@ -131,24 +137,51 @@ body:not(.loggedin) #sr-header-area .width-clip {
   font-size: 0;
 
   a {
-    color: #fff;
-    display: inline-block;
-    font-family: Lato, arial, sans-serif;
-    font-size: 42px;
-    font-variant: normal;
-    font-weight: bold;
-    line-height: 42px;
-    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    text-indent: -9999px;
+    top: 50%;
+    left: 50%;
+    width: 92px;
+    height: 17px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 63px;
+      height: 61px;
+      top: -9px;
+      left: -70px;
+      background-size: cover;
+      transform-origin: 44px 18px;
+      animation: logopart1 2000ms linear infinite forwards;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 92px;
+      height: 50px;
+      top: -4px;
+      left: -140px;
+      background-size: cover;
+      transform-origin: 12px 13px;
+      animation: logopart2 2000ms linear infinite forwards;
+    }
   }
 }
 
 /* Tabmenu (hot/new/top) */
 
 #header-bottom-left {
-  left: 16px;
   position: absolute;
-  right: 384px;
-  top: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #header .tabmenu {
@@ -156,10 +189,15 @@ body:not(.loggedin) #sr-header-area .width-clip {
   display: block;
   height: 42px;
   line-height: 42px;
-  margin: 12px 0 0 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 16px;
 
   &::before {
-    background-color: rgba(0, 0, 0, 0.24);
+    transition: background 300ms linear;
+    background: linear-gradient(to right, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
     content: "";
     display: block;
     height: 42px;
@@ -168,6 +206,10 @@ body:not(.loggedin) #sr-header-area .width-clip {
     right: -384px;
     z-index: -1;
   }
+
+  // &:hover:before {
+  //   background: linear-gradient(to right, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0.24) 100%);
+  // }
 
   li a {
     color: rgba(255, 255, 255, 0.7);
@@ -199,6 +241,10 @@ body:not(.loggedin) #sr-header-area .width-clip {
 .listing-page .tabmenu li > a[href$="/controversial/"],
 .wiki-page    .tabmenu li > a[href$="/controversial/"],
 .listing-page .tabmenu li > a[href$="/promoted/"],
-.wiki-page    .tabmenu li > a[href$="/promoted/"] {
+.wiki-page    .tabmenu li > a[href$="/promoted/"],
+.listing-page .tabmenu li > a[href$="/ads/"],
+.wiki-page    .tabmenu li > a[href$="/ads/"],
+.listing-page .tabmenu li > a[href$="/gilded/"],
+.wiki-page    .tabmenu li > a[href$="/gilded/"] {
   display: none !important;
 }

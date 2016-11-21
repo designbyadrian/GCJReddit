@@ -13,7 +13,6 @@
 
 .side::before {
   background-color: #dbdbdb;
-  background-image: url(%%sidebarimg%%);
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   content: "";
@@ -271,7 +270,7 @@ div.titlebox span.number::after {
 /* Submit Button */
 
 .morelink {
-  background-color: $color-rich-blue;
+  background-color: $color-button;
   background-image: none !important;
   border: none;
   border-radius: 2px;
@@ -287,12 +286,12 @@ div.titlebox span.number::after {
 }
 
 .morelink:hover {
-  background-color: #158be2;
+  background-color: lighten($color-button,5%);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .morelink:active {
-  background-color: #0066b2;
+  background-color: lighten($color-button,5%);
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -455,7 +454,7 @@ div.titlebox span.number::after {
 /* Buttonstyle H3 */
 
 .side .titlebox .md h3 a {
-  background-color: $color-rich-blue;
+  background-color: $color-grey;
   border-radius: 2px;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
   color: #fff;

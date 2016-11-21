@@ -1,0 +1,30 @@
+/* HEADER BACKGROUND IMAGE */
+
+ #header {background-image: url(%%headerimg%%);}
+
+/* SIDEBAR IMAGE */
+
+.side::before {background-image: url(%%sidebarimg%%);}
+
+/* BRAVE LOGO (change white or black) */
+
+#header .pagename {
+  a {
+    background-image: url(%%bravelogowhite%%);
+
+    &:before {
+      background-image: url(%%bravepart1white%%);
+    }
+
+    &:after {
+      background-image: url(%%bravepart2white%%);
+    }
+  }
+}
+
+/* ARROWS -- see "heads.png" */
+
+.arrow {
+  &.upmod {background-position: -0px -0px;}
+  &.downmod {background-position: -96px -0px;}
+}

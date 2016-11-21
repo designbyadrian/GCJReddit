@@ -1,0 +1,32 @@
+/* MOD FLAIRS */
+
+
+/* Generic submitter label */
+@include op-label($color-blue);
+
+/* Mods */
+@include moderator-label("hobdodgeries",#492d9d,#FE2E2E);
+
+@include moderator-label("smittyjaja",#FF00FF);
+
+@include moderator-label("subpleiades",#00FF00);
+
+@include moderator-label("Python2k10",#0000FF);
+
+@include moderator-label("DaedalusInGame",#FFFF00);
+
+@include moderator-label("Langston_huge",#2EFEF7);
+
+@include moderator-label("Sexyphobe",#000000);
+
+@include moderator-label("thinkadrian",rgb(153, 193, 222));
+
+@include moderator-label("-CdG-Luck",#FF6347);
+
+/* Distingiushed gentlemen */
+@include distinguished-label($color-green);
+
+/*Gives Automod a name*/
+a.author[href$="AutoModerator"]:after{
+  content:" (60fps bot)";
+}
