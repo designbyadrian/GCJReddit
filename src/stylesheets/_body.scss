@@ -8,8 +8,13 @@ body > .content {
 
 .link {
   margin: 0;
-  padding: 10px 0;
+  padding: 12px 0;
   position: relative;
+  border-top: 1px solid #edf1f3;
+
+  &:first-child {
+    border: none
+  }
 }
 
 /* Objects on the link from left to right */
@@ -24,7 +29,7 @@ body > .content .link .rank,
 .link {
   .midcol {
     height: 56px;
-    margin: 0 16px 0 0;
+    margin: 0 2px 0 0;
     overflow: visible;
     width: 32px !important;
   }
@@ -121,11 +126,13 @@ body > .content .link .rank,
 }
 
 .thumbnail.self {
-  background: url(%%spritesheet%%) -96px -104px;
+  background: url(%%spritesheet%%) -96px -124px;
 }
 
 .stickied .thumbnail {
   background: url(%%spritesheet%%) -96px -48px;
+  height: 76px;
+  margin-bottom: -20px;
 }
 
 .over18.link .thumbnail {

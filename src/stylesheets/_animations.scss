@@ -130,3 +130,62 @@
     transform: rotate(0deg);
   }
 }
+
+@keyframes pip_is_dead {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes last_breath {
+  0% {
+    transform: scale(0.2) translate3d(0,0,0);
+
+  }
+  10% {
+    transform: scale(0.28) translate3d(-20%,-50%,0);
+
+  }
+  20% {
+    transform: scale(0.36) translate3d(20%,-100%,0);
+
+  }
+  30% {
+    transform: scale(0.44) translate3d(-20%,-150%,0);
+
+  }
+  40% {
+    transform: scale(0.52) translate3d(20%,-200%,0);
+
+  }
+  50% {
+    transform: scale(0.6) translate3d(-20%,-250%,0);
+
+  }
+  60% {
+    transform: scale(0.68) translate3d(20%,-300%,0);
+
+  }
+  70% {
+    transform: scale(0.76) translate3d(-20%,-350%,0);
+
+  }
+  80% {
+    transform: scale(0.84) translate3d(20%,-400%,0);
+
+  }
+  90% {
+    transform: scale(0.92) translate3d(-20%,-450%,0);
+
+  }
+  100% {
+    transform: scale(1) translate3d(20%,-500%,0);
+
+  }
+}

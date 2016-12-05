@@ -1,12 +1,12 @@
-/* HEADER BACKGROUND IMAGE */
+/* ------ HEADER BACKGROUND IMAGE --- */
 
  #header {background-image: url(%%headerimg%%);}
 
-/* SIDEBAR IMAGE */
+/* ------ SIDEBAR IMAGE --- */
 
 .side::before {background-image: url(%%sidebarimg%%);}
 
-/* BRAVE LOGO (change white or black) */
+/* ------ BRAVE LOGO (change white or black) --- */
 
 #header .pagename {
   a {
@@ -22,25 +22,29 @@
   }
 }
 
-/* ARROWS -- see "heads.png" */
+/* ------ ARROWS -- see "heads.png" --- */
 
 .arrow {
-  &.upmod {background-position: -0px -0px;}
+  &.upmod {background-position: -32px -32px;}
   &.downmod {background-position: -96px -0px;}
 }
 
-/* SIDEBAR HEADER FACES - see "heads.png" */
+/* ------ SIDEBAR HEADER FACES - see "heads.png" --- */
 
 .side .titlebox .md h2:first-of-type::before {
   background-position: -0px -32px;
 }
 
 .side .titlebox .md h2::before {
-  background-position: -32px -32px;
+  background-position: -0px -0px;
 }
 
-/* BULLET LIST FACES - see "heads.png" */
+/* ------ BULLET LIST FACES - see "heads.png" --- */
 
 .side .md ul li:before {
   background-position: -32px -0px;
 }
+
+
+
+/* ------ the rest, best to rebuild using SCSS --- */

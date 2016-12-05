@@ -10,13 +10,14 @@ $color-yellow: hsl(55, 67%, 46%);
 $color-grey: #4d5763;
 $color-dark-grey: #292f34;
 $color-lighter-grey: #98abba;
+$color-lightest-grey: #D8D9DA;
 $color-medium-grey: #738491;
 
 $white: #fff;
 $black: #1f1f1f;
 
 // Semantic colors.
-$color-background: #D8D9DA;
+$color-background: $color-lightest-grey;
 $color-button-text: $white;
 $color-button: $color-grey;
 $color-popup-background: $color-medium-grey;

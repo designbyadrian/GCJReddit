@@ -77,3 +77,14 @@ body {
     }
   }
 }
+
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important;
+}
+
+a[href$="/spoiler"]:hover,
+a[href$="/spoiler"]:active {
+    color: #FFF !important;
+    background: #333 !important;
+}

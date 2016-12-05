@@ -3,15 +3,15 @@
  * Read more on https://github.com/designbyadrian/GCJReddit
  */
 /* --- custom rules --- */
-/* HEADER BACKGROUND IMAGE */
+/* ------ HEADER BACKGROUND IMAGE --- */
 #header {
   background-image: url(%%headerimg%%); }
 
-/* SIDEBAR IMAGE */
+/* ------ SIDEBAR IMAGE --- */
 .side::before {
   background-image: url(%%sidebarimg%%); }
 
-/* BRAVE LOGO (change white or black) */
+/* ------ BRAVE LOGO (change white or black) --- */
 #header .pagename a {
   background-image: url(%%bravelogowhite%%); }
   #header .pagename a:before {
@@ -19,24 +19,25 @@
   #header .pagename a:after {
     background-image: url(%%bravepart2white%%); }
 
-/* ARROWS -- see "heads.png" */
+/* ------ ARROWS -- see "heads.png" --- */
 .arrow.upmod {
-  background-position: -0px -0px; }
+  background-position: -32px -32px; }
 
 .arrow.downmod {
   background-position: -96px -0px; }
 
-/* SIDEBAR HEADER FACES - see "heads.png" */
+/* ------ SIDEBAR HEADER FACES - see "heads.png" --- */
 .side .titlebox .md h2:first-of-type::before {
   background-position: -0px -32px; }
 
 .side .titlebox .md h2::before {
-  background-position: -32px -32px; }
+  background-position: -0px -0px; }
 
-/* BULLET LIST FACES - see "heads.png" */
+/* ------ BULLET LIST FACES - see "heads.png" --- */
 .side .md ul li:before {
   background-position: -32px -0px; }
 
+/* ------ the rest, best to rebuild using SCSS --- */
 /* MOD FLAIRS */
 /* Generic submitter label */
 .author.submitter:before {
@@ -233,11 +234,11 @@
   font-weight: bold;
   text-transform: uppercase;
   overflow: hidden;
-  color: #666666 !important;
+  color: #777777 !important;
   display: inline-block;
   padding: 6px 5px 4px 7px;
   margin: -4px 6px -6px -6px;
-  background-color: black;
+  background-color: #040404;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -247,10 +248,10 @@
   display: inline-block;
   padding: 4px 6px;
   border-radius: 32px;
-  background-color: #000000;
-  color: #666666 !important; }
+  background-color: #111;
+  color: #777777 !important; }
   .author[href$="/Sexyphobe"]:hover {
-    background-color: black; }
+    background-color: #040404; }
 
 .author[href$="/thinkadrian"]:before {
   content: '-';
@@ -633,6 +634,15 @@ body {
       box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
       color: #fff; }
 
+a[href$="/spoiler"] {
+  background: #000 !important;
+  color: #000 !important; }
+
+a[href$="/spoiler"]:hover,
+a[href$="/spoiler"]:active {
+  color: #FFF !important;
+  background: #333 !important; }
+
 #header {
   background-color: #30333a;
   background-image: url(%%headerimg%%);
@@ -851,11 +861,14 @@ body:not(.loggedin) #header-bottom-right {
   background-position: -80px 0;
   font-size: 0;
   height: 42px;
-  margin: 0 8px 0 0;
+  margin: 0 0 0 0;
   padding-left: 42px;
   vertical-align: top;
   width: 0;
-  z-index: 99; }
+  z-index: 99;
+  position: absolute;
+  left: 12px;
+  bottom: 50px; }
 
 #header-img.default-header:hover,
 #header-img:hover {
@@ -967,8 +980,11 @@ body > .content {
 
 .link {
   margin: 0;
-  padding: 10px 0;
-  position: relative; }
+  padding: 12px 0;
+  position: relative;
+  border-top: 1px solid #edf1f3; }
+  .link:first-child {
+    border: none; }
 
 /* Objects on the link from left to right */
 body > .content .link .rank,
@@ -978,7 +994,7 @@ body > .content .link .rank,
 /* Voting Arrows */
 .link .midcol {
   height: 56px;
-  margin: 0 16px 0 0;
+  margin: 0 2px 0 0;
   overflow: visible;
   width: 32px !important; }
 
@@ -1074,10 +1090,12 @@ body > .content .link .rank,
   background: url(%%spritesheet%%) -176px -48px; }
 
 .thumbnail.self {
-  background: url(%%spritesheet%%) -96px -104px; }
+  background: url(%%spritesheet%%) -96px -124px; }
 
 .stickied .thumbnail {
-  background: url(%%spritesheet%%) -96px -48px; }
+  background: url(%%spritesheet%%) -96px -48px;
+  height: 76px;
+  margin-bottom: -20px; }
 
 .over18.link .thumbnail {
   background: url(%%spritesheet%%) -176px -104px !important; }
@@ -1852,7 +1870,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 .side {
   background-color: transparent;
-  margin: 282px 16px 108px 0;
+  margin: 416px 16px 40px 0;
   padding: 0;
   width: 320px; }
   .side .spacer {
@@ -1861,13 +1879,13 @@ div.commentarea div.RES-keyNav-activeElement .md {
 /* Start Subreddit Box */
 .side::before {
   background-color: #dbdbdb;
-  border-radius: 2px;
+  border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   content: "";
   display: block;
-  height: 192px;
+  height: 240px;
   position: absolute;
-  top: 100px;
+  top: 262px;
   width: 320px;
   z-index: 1; }
 
@@ -1878,18 +1896,19 @@ div.commentarea div.RES-keyNav-activeElement .md {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   content: " ";
   display: block;
-  height: 90px;
+  height: 72px;
   margin-left: -16px;
-  margin-top: -16px;
+  margin-top: -10px;
   position: absolute;
   width: 320px;
   z-index: -1; }
 
 .side .titlebox h1.redditname {
   font-family: Lato, arial, verdana, helvetica, sans-serif;
+  font-size: 16px;
   margin-bottom: 6px;
   position: absolute;
-  top: 308px;
+  top: 512px;
   z-index: 100; }
 
 .side .titlebox h1.redditname a {
@@ -1897,9 +1916,9 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 .titlebox span.subscribers {
   color: #333;
-  font-size: 12px;
+  font-size: 11px;
   position: absolute;
-  top: 336px;
+  top: 550px;
   z-index: 100; }
 
 div.titlebox span.word {
@@ -1908,15 +1927,16 @@ div.titlebox span.word {
 .titlebox .users-online {
   position: absolute;
   display: inline;
-  top: 356px;
+  top: 534px;
   margin: 0;
-  z-index: 100; }
+  z-index: 100;
+  font-size: 11px; }
 
 .titlebox .users-online::before {
   display: none; }
 
 div.titlebox span.number::after {
-  content: " shills waiting for Half-Life 3"; }
+  content: " waiting for Half-Life 3"; }
 
 .titlebox .users-online .number::after {
   content: " Seanpologists online"; }
@@ -1927,9 +1947,9 @@ div.titlebox span.number::after {
 
 /* Subscribe Button */
 .titlebox .fancy-toggle-button {
-  margin: 0 0 0 208px;
+  margin: 0 0 0 212px;
   position: absolute;
-  top: 314px;
+  top: 513px;
   z-index: 100;
   /* Subscribe */
   /* Unsubscribe */ }
@@ -1953,21 +1973,18 @@ div.titlebox span.number::after {
     background-color: #2994d6;
     color: #fff; }
     .titlebox .fancy-toggle-button .active.add:hover {
-      background-color: #36bb6f; }
+      background-color: #3e9eda; }
     .titlebox .fancy-toggle-button .active.add:active {
-      background-color: #189b51;
-      margin-left: -13px;
-      padding-left: 24px;
-      text-align: center; }
+      background-color: #26c555; }
   .titlebox .fancy-toggle-button .active.remove {
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: #98abba;
     box-shadow: none;
     color: #fff;
     margin-left: -14px; }
     .titlebox .fancy-toggle-button .active.remove:hover {
-      background-color: rgba(0, 0, 0, 0.32); }
+      background-color: #a20b39; }
     .titlebox .fancy-toggle-button .active.remove:active {
-      background-color: rgba(0, 0, 0, 0.4); }
+      background-color: #ba0d41; }
 
 .hover-bubble.multi-selector {
   border: none;
@@ -1981,7 +1998,7 @@ div.titlebox span.number::after {
 /* Search */
 #search {
   position: absolute;
-  top: 384px;
+  top: 580px;
   width: 320px;
   z-index: 1; }
   #search input[type=text] {
@@ -2083,7 +2100,7 @@ div.titlebox span.number::after {
   padding: 0 0;
   position: absolute;
   text-align: center;
-  top: 442px;
+  top: 212px;
   -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 152px; }
@@ -2563,12 +2580,6 @@ body.comments-page > .content {
   color: #738491;
   font-size: inherit;
   font-weight: bold; }
-
-.comment .score::before {
-  content: "• ";
-  line-height: 14px;
-  margin: 0 2px;
-  vertical-align: middle; }
 
 /* Comment Body Text */
 .comment .usertext .md {
@@ -3152,30 +3163,63 @@ body.comments-page > .content {
 
 .footer-parent {
   background-image: url(%%footer%%);
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-  margin-top: 192px;
-  padding: 528px 0 64px 0; }
+  background-position: 50% bottom;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 300px;
+  margin-top: 20px;
+  padding: 8px 0 64px 0;
+  position: relative; }
+  .footer-parent::before {
+    content: '';
+    position: absolute;
+    bottom: 92px;
+    right: 50px;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-animation: last_breath 8000ms 4000ms linear infinite;
+            animation: last_breath 8000ms 4000ms linear infinite;
+    -webkit-transform: scale(0.2) translate3d(0, 0, 0);
+            transform: scale(0.2) translate3d(0, 0, 0); }
+  .footer-parent::after {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    right: 32px;
+    background-image: url(%%heads%%) !important;
+    background-position: -64px -32px;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    -webkit-animation: pip_is_dead 8000ms ease-in-out infinite forwards;
+            animation: pip_is_dead 8000ms ease-in-out infinite forwards; }
 
 .footer {
-  background-color: rgba(43, 51, 58, 0.64);
+  background-color: rgba(22, 53, 80, 0.5);
   border: 0 solid;
   border-radius: 2px;
   max-width: 640px;
-  padding: 16px; }
+  padding: 16px 0;
+  font-size: 0.8em;
+  margin: 16px auto 104px; }
+  .footer a {
+    color: rgba(255, 255, 255, 0.7); }
 
 .footer .col {
   border: none;
-  padding: 0 24px; }
+  padding: 0 16px;
+  margin: 0; }
 
 .flat-vert.title,
 .bottommenu a {
   color: rgba(255, 255, 255, 0.7); }
 
-.bottommenu {
-  color: rgba(255, 255, 255, 0.42); }
+.bottommenu, .bottommenu .updated {
+  color: rgba(255, 255, 255, 0.7); }
 
 .debuginfo,
 #hsts_pixel {
@@ -3710,3 +3754,95 @@ body.other-discussions-page > .content,
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
+
+@-webkit-keyframes pip_is_dead {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes pip_is_dead {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes last_breath {
+  0% {
+    -webkit-transform: scale(0.2) translate3d(0, 0, 0);
+            transform: scale(0.2) translate3d(0, 0, 0); }
+  10% {
+    -webkit-transform: scale(0.28) translate3d(-20%, -50%, 0);
+            transform: scale(0.28) translate3d(-20%, -50%, 0); }
+  20% {
+    -webkit-transform: scale(0.36) translate3d(20%, -100%, 0);
+            transform: scale(0.36) translate3d(20%, -100%, 0); }
+  30% {
+    -webkit-transform: scale(0.44) translate3d(-20%, -150%, 0);
+            transform: scale(0.44) translate3d(-20%, -150%, 0); }
+  40% {
+    -webkit-transform: scale(0.52) translate3d(20%, -200%, 0);
+            transform: scale(0.52) translate3d(20%, -200%, 0); }
+  50% {
+    -webkit-transform: scale(0.6) translate3d(-20%, -250%, 0);
+            transform: scale(0.6) translate3d(-20%, -250%, 0); }
+  60% {
+    -webkit-transform: scale(0.68) translate3d(20%, -300%, 0);
+            transform: scale(0.68) translate3d(20%, -300%, 0); }
+  70% {
+    -webkit-transform: scale(0.76) translate3d(-20%, -350%, 0);
+            transform: scale(0.76) translate3d(-20%, -350%, 0); }
+  80% {
+    -webkit-transform: scale(0.84) translate3d(20%, -400%, 0);
+            transform: scale(0.84) translate3d(20%, -400%, 0); }
+  90% {
+    -webkit-transform: scale(0.92) translate3d(-20%, -450%, 0);
+            transform: scale(0.92) translate3d(-20%, -450%, 0); }
+  100% {
+    -webkit-transform: scale(1) translate3d(20%, -500%, 0);
+            transform: scale(1) translate3d(20%, -500%, 0); } }
+
+@keyframes last_breath {
+  0% {
+    -webkit-transform: scale(0.2) translate3d(0, 0, 0);
+            transform: scale(0.2) translate3d(0, 0, 0); }
+  10% {
+    -webkit-transform: scale(0.28) translate3d(-20%, -50%, 0);
+            transform: scale(0.28) translate3d(-20%, -50%, 0); }
+  20% {
+    -webkit-transform: scale(0.36) translate3d(20%, -100%, 0);
+            transform: scale(0.36) translate3d(20%, -100%, 0); }
+  30% {
+    -webkit-transform: scale(0.44) translate3d(-20%, -150%, 0);
+            transform: scale(0.44) translate3d(-20%, -150%, 0); }
+  40% {
+    -webkit-transform: scale(0.52) translate3d(20%, -200%, 0);
+            transform: scale(0.52) translate3d(20%, -200%, 0); }
+  50% {
+    -webkit-transform: scale(0.6) translate3d(-20%, -250%, 0);
+            transform: scale(0.6) translate3d(-20%, -250%, 0); }
+  60% {
+    -webkit-transform: scale(0.68) translate3d(20%, -300%, 0);
+            transform: scale(0.68) translate3d(20%, -300%, 0); }
+  70% {
+    -webkit-transform: scale(0.76) translate3d(-20%, -350%, 0);
+            transform: scale(0.76) translate3d(-20%, -350%, 0); }
+  80% {
+    -webkit-transform: scale(0.84) translate3d(20%, -400%, 0);
+            transform: scale(0.84) translate3d(20%, -400%, 0); }
+  90% {
+    -webkit-transform: scale(0.92) translate3d(-20%, -450%, 0);
+            transform: scale(0.92) translate3d(-20%, -450%, 0); }
+  100% {
+    -webkit-transform: scale(1) translate3d(20%, -500%, 0);
+            transform: scale(1) translate3d(20%, -500%, 0); } }

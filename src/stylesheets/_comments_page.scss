@@ -244,13 +244,6 @@ body.comments-page > .content {
   font-weight: bold;
 }
 
-.comment .score::before {
-  content: "• ";
-  line-height: 14px;
-  margin: 0 2px;
-  vertical-align: middle;
-}
-
 /* Comment Body Text */
 
 .comment .usertext .md {
