@@ -16,6 +16,10 @@ body.comments-page > .content {
   }
 }
 
+.commentarea .md {
+  margin: 0.5em 0;
+}
+
 .commentarea .menuarea {
   margin: 0 0 0 0;
   padding-left: 16px;
@@ -44,7 +48,9 @@ body.comments-page > .content {
   }
 
   .dropdown.lightdrop .selected::after {
-    content: "▼";
+    content: " ▼";
+    font-family: "Lucida Grande",sans-serif;
+    font-size: 8px;
   }
 }
 
@@ -89,6 +95,13 @@ body.comments-page > .content {
 
 .usertext button {
   margin: 4px 16px 8px 0;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  color: $color-grey;
+
+  &:hover {
+    border-color: darken($color-grey,5%)
+  }
 }
 
 .commentarea .usertext-edit {
@@ -283,9 +296,12 @@ body.comments-page > .content {
 
 /* Deleted comment */
 
+.usertext-body {
+  margin: 0.5em 0;
+}
+
 .usertext.grayed .usertext-body {
   background-color: transparent;
-  margin: 4px 0;
   padding: 0;
   text-transform: italic;
 }

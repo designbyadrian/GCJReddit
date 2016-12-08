@@ -59,7 +59,6 @@ $lighnessChange: 50%;
 
 @mixin user-label($bgColor) {
   @include base-flair($bgColor);
-  padding: 3px 6px;
 
   &[title]:before {
     content: '';
@@ -68,7 +67,8 @@ $lighnessChange: 50%;
 
 @mixin base-flair($bgColor) {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: $bgColor;
   color: text-by-bg-color($bgColor) !important;
@@ -81,14 +81,15 @@ $lighnessChange: 50%;
 @mixin base-flair-handle($bgColor) {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: text-by-bg-color($bgColor) !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: darken($bgColor,5%);
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;

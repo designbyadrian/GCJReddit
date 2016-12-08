@@ -43,14 +43,15 @@
 .author.submitter:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #2585c1;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -59,7 +60,8 @@
 
 .author.submitter {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #2994d6;
   color: #fff !important; }
@@ -70,14 +72,15 @@
 .author[href$="/hobdodgeries"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #402789;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -90,7 +93,8 @@
 
 .author[href$="/hobdodgeries"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #492d9d;
   color: #fff !important; }
@@ -100,14 +104,15 @@
 .author[href$="/smittyjaja"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #e600e6;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -116,7 +121,8 @@
 
 .author[href$="/smittyjaja"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #FF00FF;
   color: #fff !important; }
@@ -126,14 +132,15 @@
 .author[href$="/subpleiades"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #00e600;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -142,7 +149,8 @@
 
 .author[href$="/subpleiades"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #00FF00;
   color: #fff !important; }
@@ -152,14 +160,15 @@
 .author[href$="/Python2k10"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #0000e6;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -168,7 +177,8 @@
 
 .author[href$="/Python2k10"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #0000FF;
   color: #fff !important; }
@@ -178,14 +188,15 @@
 .author[href$="/DaedalusInGame"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #e6e600;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -194,7 +205,8 @@
 
 .author[href$="/DaedalusInGame"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #FFFF00;
   color: #fff !important; }
@@ -204,14 +216,15 @@
 .author[href$="/Langston_huge"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #15fef6;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -220,7 +233,8 @@
 
 .author[href$="/Langston_huge"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #2EFEF7;
   color: #fff !important; }
@@ -230,14 +244,15 @@
 .author[href$="/Sexyphobe"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #777777 !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #040404;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -246,7 +261,8 @@
 
 .author[href$="/Sexyphobe"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #111;
   color: #777777 !important; }
@@ -256,40 +272,47 @@
 .author[href$="/thinkadrian"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
-  color: #2a5c81 !important;
+  color: #4f90be !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
-  background-color: #86b5d8;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
+  background-color: #d1e2ee;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
   text-indent: 0px; }
 
+.author[href$="/thinkadrian"]:before {
+  background: #A9C9EA;
+  color: #2763a0; }
+
 .author[href$="/thinkadrian"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
-  background-color: #99c1de;
-  color: #2a5c81 !important; }
+  background-color: #E4EEF5;
+  color: #4f90be !important; }
   .author[href$="/thinkadrian"]:hover {
-    background-color: #86b5d8; }
+    background-color: #d1e2ee; }
 
 .author[href$="/-CdG-Luck"]:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #ff4d2e;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -298,7 +321,8 @@
 
 .author[href$="/-CdG-Luck"] {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #FF6347;
   color: #fff !important; }
@@ -310,14 +334,15 @@
 .author.moderator:before {
   content: '-';
   text-indent: -100px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   color: #fff !important;
   display: inline-block;
-  padding: 6px 5px 4px 7px;
-  margin: -4px 6px -6px -6px;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
   background-color: #21b04c;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -327,7 +352,8 @@
 .stickied .author,
 .author.moderator {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #26c555;
   color: #fff !important; }
@@ -476,11 +502,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-redflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #a20b39;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-redflair:hover {
     background-color: #8a0a30; }
   .flair.flair-redflair[title]:before {
@@ -488,11 +514,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-purpleflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #6e2ad5;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-purpleflair:hover {
     background-color: #6326c0; }
   .flair.flair-purpleflair[title]:before {
@@ -500,11 +526,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-greenflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #26c555;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-greenflair:hover {
     background-color: #21b04c; }
   .flair.flair-greenflair[title]:before {
@@ -512,11 +538,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-orangeflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #d3991d;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-orangeflair:hover {
     background-color: #bc891a; }
   .flair.flair-orangeflair[title]:before {
@@ -524,11 +550,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-blueflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #2994d6;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-blueflair:hover {
     background-color: #2585c1; }
   .flair.flair-blueflair[title]:before {
@@ -536,11 +562,11 @@ a.author[href$="AutoModerator"]:after {
 
 .flair.flair-yellowflair {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #c4b727;
-  color: #fff !important;
-  padding: 3px 6px; }
+  color: #fff !important; }
   .flair.flair-yellowflair:hover {
     background-color: #afa323; }
   .flair.flair-yellowflair[title]:before {
@@ -1095,7 +1121,8 @@ body > .content .link .rank,
 .stickied .thumbnail {
   background: url(%%spritesheet%%) -96px -48px;
   height: 76px;
-  margin-bottom: -20px; }
+  margin-bottom: -13px;
+  margin-top: -5px; }
 
 .over18.link .thumbnail {
   background: url(%%spritesheet%%) -176px -104px !important; }
@@ -1399,7 +1426,8 @@ body .content .sitetable .link .title a:hover {
 /* Linkflairs */
 .linkflairlabel {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 6px;
+  font-size: 10px;
   border-radius: 32px;
   background-color: #738491;
   color: #fff !important;
@@ -1870,7 +1898,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 .side {
   background-color: transparent;
-  margin: 416px 16px 40px 0;
+  margin: 496px 16px 40px 0;
   padding: 0;
   width: 320px; }
   .side .spacer {
@@ -1883,11 +1911,12 @@ div.commentarea div.RES-keyNav-activeElement .md {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   content: "";
   display: block;
-  height: 240px;
+  height: 320px;
   position: absolute;
   top: 262px;
   width: 320px;
-  z-index: 1; }
+  z-index: 1;
+  background-size: 320px auto; }
 
 /* Redditname + Subscibers & Here right now */
 .side .titlebox h1.redditname::before {
@@ -1908,7 +1937,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   font-size: 16px;
   margin-bottom: 6px;
   position: absolute;
-  top: 512px;
+  top: 592px;
   z-index: 100; }
 
 .side .titlebox h1.redditname a {
@@ -1918,7 +1947,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   color: #333;
   font-size: 11px;
   position: absolute;
-  top: 550px;
+  top: 630px;
   z-index: 100; }
 
 div.titlebox span.word {
@@ -1927,7 +1956,7 @@ div.titlebox span.word {
 .titlebox .users-online {
   position: absolute;
   display: inline;
-  top: 534px;
+  top: 614px;
   margin: 0;
   z-index: 100;
   font-size: 11px; }
@@ -1949,7 +1978,7 @@ div.titlebox span.number::after {
 .titlebox .fancy-toggle-button {
   margin: 0 0 0 212px;
   position: absolute;
-  top: 513px;
+  top: 593px;
   z-index: 100;
   /* Subscribe */
   /* Unsubscribe */ }
@@ -1998,7 +2027,7 @@ div.titlebox span.number::after {
 /* Search */
 #search {
   position: absolute;
-  top: 580px;
+  top: 660px;
   width: 320px;
   z-index: 1; }
   #search input[type=text] {
@@ -2405,6 +2434,9 @@ body.comments-page > .content {
   .commentarea .panestack-title .title {
     color: #4d5763; }
 
+.commentarea .md {
+  margin: 0.5em 0; }
+
 .commentarea .menuarea {
   margin: 0 0 0 0;
   padding-left: 16px; }
@@ -2424,7 +2456,9 @@ body.comments-page > .content {
   .commentarea .menuarea .dropdown.lightdrop .selected:hover {
     color: #4f8ef7; }
   .commentarea .menuarea .dropdown.lightdrop .selected::after {
-    content: "▼"; }
+    content: " ▼";
+    font-family: "Lucida Grande",sans-serif;
+    font-size: 8px; }
 
 .drop-choices.lightdrop {
   border: none;
@@ -2460,7 +2494,12 @@ body.comments-page > .content {
   padding: 64px 16px 16px 16px !important; }
 
 .usertext button {
-  margin: 4px 16px 8px 0; }
+  margin: 4px 16px 8px 0;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  color: #4d5763; }
+  .usertext button:hover {
+    border-color: #424a55; }
 
 .commentarea .usertext-edit {
   max-width: 504px;
@@ -2608,9 +2647,11 @@ body.comments-page > .content {
   margin: 16px 0 0 0; }
 
 /* Deleted comment */
+.usertext-body {
+  margin: 0.5em 0; }
+
 .usertext.grayed .usertext-body {
   background-color: transparent;
-  margin: 4px 0;
   padding: 0;
   text-transform: italic; }
 

@@ -1,6 +1,6 @@
 .side {
   background-color: transparent;
-  margin: 416px 16px 40px 0;
+  margin: 496px 16px 40px 0;
   padding: 0;
   width: 320px;
 
@@ -17,7 +17,7 @@
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   content: "";
   display: block;
-  height: 240px;
+  height: 320px;
   position: absolute;
   top: 262px;
   width: 320px;
@@ -46,7 +46,7 @@
   font-size: 16px;
   margin-bottom: 6px;
   position: absolute;
-  top: 512px;
+  top: 592px;
   z-index: 100;
 }
 
@@ -58,7 +58,7 @@
   color: #333;
   font-size: 11px;
   position: absolute;
-  top: 550px;
+  top: 630px;
   z-index: 100;
 }
 
@@ -69,7 +69,7 @@ div.titlebox span.word {
 .titlebox .users-online {
   position: absolute;
   display: inline;
-  top: 534px;
+  top: 614px;
   margin: 0;
   z-index: 100;
   font-size: 11px;
@@ -97,7 +97,7 @@ div.titlebox span.number::after {
 .titlebox .fancy-toggle-button {
   margin: 0 0 0 212px;
   position: absolute;
-  top: 513px;
+  top: 593px;
   z-index: 100;
 
   .active {
@@ -169,7 +169,7 @@ div.titlebox span.number::after {
 
 #search {
   position: absolute;
-  top: 580px;
+  top: 660px;
   width: 320px;
   z-index: 1;
 
