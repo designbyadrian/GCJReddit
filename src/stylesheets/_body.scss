@@ -430,6 +430,7 @@ body .content .sitetable .link .title a:hover {
   @include base-flair($color-link-flair);
   margin-bottom: -4px;
   margin-left: 0.5em;
+  border: 0;
 }
 
 .linkflair-mod .linkflairlabel {

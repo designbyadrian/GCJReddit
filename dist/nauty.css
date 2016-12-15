@@ -277,29 +277,35 @@
   font-family: "Lucida Grande",sans-serif;
   text-transform: uppercase;
   overflow: hidden;
-  color: #4f90be !important;
+  color: #5192c8 !important;
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #d1e2ee;
+  background-color: #d8e7f3;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
   text-indent: 0px; }
 
 .author[href$="/thinkadrian"]:before {
-  background: #A9C9EA;
-  color: #2763a0; }
+  background: #cbd4dc;
+  color: #586f84; }
 
 .author[href$="/thinkadrian"] {
   display: inline-block;
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #E4EEF5;
-  color: #4f90be !important; }
+  background-color: #ecf3f9;
+  color: #5192c8 !important; }
   .author[href$="/thinkadrian"]:hover {
-    background-color: #d1e2ee; }
+    background-color: #d8e7f3; }
+
+.author[href$="/thinkadrian"] {
+  color: cornflowerblue !important; }
+
+.author[href$="/thinkadrian"]:before {
+  color: #fff !important; }
 
 .author[href$="/-CdG-Luck"]:before {
   content: '-';
@@ -343,7 +349,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #21b04c;
+  background-color: #0d9179;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -355,11 +361,11 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #26c555;
+  background-color: #10a88c;
   color: #fff !important; }
   .stickied .author:hover,
   .author.moderator:hover {
-    background-color: #21b04c; }
+    background-color: #0d9179; }
 
 /*Gives Automod a name*/
 a.author[href$="AutoModerator"]:after {
@@ -529,10 +535,10 @@ a.author[href$="AutoModerator"]:after {
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #26c555;
+  background-color: #10a88c;
   color: #fff !important; }
   .flair.flair-greenflair:hover {
-    background-color: #21b04c; }
+    background-color: #0d9179; }
   .flair.flair-greenflair[title]:before {
     content: ''; }
 
@@ -883,6 +889,7 @@ body:not(.loggedin) #header-bottom-right {
 /* Snoo */
 #header-img.default-header,
 #header-img {
+  display: none;
   background-image: url(%%spritesheet%%);
   background-position: -80px 0;
   font-size: 0;
@@ -970,7 +977,8 @@ body:not(.loggedin) #header-bottom-right {
     right: -384px;
     z-index: -1; }
   #header .tabmenu li a {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     display: inline-block;
     font-family: Lato, arial, sans-serif;
     font-size: 14px;
@@ -997,6 +1005,9 @@ body:not(.loggedin) #header-bottom-right {
 .listing-page .tabmenu li > a[href$="/gilded/"],
 .wiki-page .tabmenu li > a[href$="/gilded/"] {
   display: none !important; }
+
+.tabmenu a[href$="wiki/"]:before {
+  content: "Jerk "; }
 
 /* Body Content - Frontpage */
 body > .content {
@@ -1312,7 +1323,7 @@ body .content .sitetable .link .title a:hover {
     top: -1px;
     visibility: visible; }
   .link .entry .tagline .userattrs a.moderator {
-    background-color: #26c555; }
+    background-color: #10a88c; }
 
 .RESUserTagImage {
   background-image: url(%%spritesheet%%) !important;
@@ -1432,16 +1443,17 @@ body .content .sitetable .link .title a:hover {
   background-color: #738491;
   color: #fff !important;
   margin-bottom: -4px;
-  margin-left: 0.5em; }
+  margin-left: 0.5em;
+  border: 0; }
   .linkflairlabel:hover {
     background-color: #677783; }
 
 .linkflair-mod .linkflairlabel {
-  background-color: #26c555;
+  background-color: #10a88c;
   color: #fff; }
 
 .linkflair-mod a {
-  color: #26c555 !important; }
+  color: #10a88c !important; }
 
 .linkflair-mod .thumbnail.default,
 .linkflair-mod .thumbnail.self {
@@ -1518,11 +1530,11 @@ ul.report-reasons {
 .thing.link.stickied a.title,
 .thing.link.stickied a,
 .thing.link.stickied .entry li .comments {
-  color: #26c555; }
+  color: #10a88c; }
 
 .thing.link.stickied .expando-button:hover {
-  background-color: #26c555 !important;
-  border-color: #26c555 !important; }
+  background-color: #10a88c !important;
+  border-color: #10a88c !important; }
 
 .tagline .stickied-tagline {
   color: #b3b3b3;
@@ -1531,7 +1543,7 @@ ul.report-reasons {
 /* Sticky Comment */
 .stickied.comment > .entry a,
 .stickied.comment .tagline .stickied-tagline {
-  color: #26c555 !important; }
+  color: #10a88c !important; }
 
 /* Ad */
 .content .spacer {
@@ -1894,7 +1906,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 /* Locked Post */
 .reddit-infobar.with-icon.locked-infobar {
-  background-color: #26c555; }
+  background-color: #10a88c; }
 
 .side {
   background-color: transparent;
@@ -2004,7 +2016,7 @@ div.titlebox span.number::after {
     .titlebox .fancy-toggle-button .active.add:hover {
       background-color: #3e9eda; }
     .titlebox .fancy-toggle-button .active.add:active {
-      background-color: #26c555; }
+      background-color: #10a88c; }
   .titlebox .fancy-toggle-button .active.remove {
     background-color: #98abba;
     box-shadow: none;
@@ -2035,7 +2047,7 @@ div.titlebox span.number::after {
     border: 0 solid;
     border-radius: 2px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-    height: 42px;
+    height: 32px;
     line-height: 41px;
     padding: 0 42px 0 16px;
     -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2118,7 +2130,7 @@ div.titlebox span.number::after {
     display: none !important; }
 
 /* Submit Button */
-.morelink {
+.morelink, a.helplink {
   background-color: #4d5763;
   background-image: none !important;
   border: none;
@@ -2134,25 +2146,26 @@ div.titlebox span.number::after {
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 152px; }
 
-.morelink:hover {
+.morelink:hover, a.helplink:hover {
   background-color: #586471;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
-.morelink:active {
+.morelink:active, a.helplink:active {
   background-color: #586471;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12); }
 
-.sidebox.submit.submit-text .morelink {
+.sidebox.submit.submit-text .morelink, .sidebox.submit.submit-text a.helplink {
   margin-left: 168px; }
 
-.morelink a {
+.morelink a, a.helplink a {
   color: #fff;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0; }
 
-.side .sidebox.submit-text .morelink::after,
-.side .sidebox.submit-link .morelink::after {
+.side .sidebox.submit-text .morelink::after, .side .sidebox.submit-text a.helplink::after,
+.side .sidebox.submit-link .morelink::after,
+.side .sidebox.submit-link a.helplink::after {
   background-color: rgba(115, 132, 145, 0);
   border: none;
   border-radius: 2px;
@@ -2176,26 +2189,28 @@ div.titlebox span.number::after {
   z-index: 1000;
   white-space: nowrap; }
 
-.side .sidebox.submit-text .morelink:hover::after,
-.side .sidebox.submit-link .morelink:hover::after {
+.side .sidebox.submit-text .morelink:hover::after, .side .sidebox.submit-text a.helplink:hover::after,
+.side .sidebox.submit-link .morelink:hover::after,
+.side .sidebox.submit-link a.helplink:hover::after {
   background-color: rgba(115, 132, 145, 0.9);
   color: #fff;
   visibility: visible; }
 
-.side .sidebox.submit-text .morelink:focus::after,
-.side .sidebox.submit-link .morelink:focus::after {
+.side .sidebox.submit-text .morelink:focus::after, .side .sidebox.submit-text a.helplink:focus::after,
+.side .sidebox.submit-link .morelink:focus::after,
+.side .sidebox.submit-link a.helplink:focus::after {
   visibility: hidden; }
 
 /* Restricted button */
-.disabled .morelink {
+.disabled .morelink, .disabled a.helplink {
   background-color: rgba(0, 0, 0, 0.08);
   box-shadow: none !important;
   width: 320px; }
-  .disabled .morelink a {
+  .disabled .morelink a, .disabled a.helplink a {
     color: rgba(0, 0, 0, 0.32);
     font-size: 14px; }
 
-.morelink .nub {
+.morelink .nub, a.helplink .nub {
   display: none; }
 
 /* Login form */
@@ -2389,15 +2404,28 @@ div.titlebox span.number::after {
   height: 120px;
   margin: 10px 0 8px 10px; }
 
-/* Create Community */
-.sidebox.create .morelink {
+#ad_main_top {
+  width: 320px !important;
+  height: auto !important;
+  padding: 10px;
+  border-radius: 2px;
   background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14); }
+  #ad_main_top.sponsor-300-250 {
+    height: 270px !important; }
+
+/* Create Community */
+.sidebox.create {
+  display: none; }
+
+a.helplink {
   position: relative;
-  top: 0;
-  width: 100%; }
-  .sidebox.create .morelink a {
-    color: #2994d6;
-    font-size: 14px; }
+  top: auto;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  color: #fff; }
 
 .sidebox .spacer {
   display: none; }
@@ -2493,13 +2521,20 @@ body.comments-page > .content {
   overflow: visible;
   padding: 64px 16px 16px 16px !important; }
 
-.usertext button {
+.buttons button,
+.usertext button,
+.usertext-buttons button {
   margin: 4px 16px 8px 0;
   font-weight: normal;
-  border: 1px solid #ccc;
-  color: #4d5763; }
-  .usertext button:hover {
-    border-color: #424a55; }
+  border: 1px solid #98abba;
+  color: #4d5763;
+  background: #fff; }
+  .buttons button:hover, .buttons button:active,
+  .usertext button:hover,
+  .usertext button:active,
+  .usertext-buttons button:hover,
+  .usertext-buttons button:active {
+    border-color: #4d5763; }
 
 .commentarea .usertext-edit {
   max-width: 504px;
@@ -2602,6 +2637,10 @@ body.comments-page > .content {
   color: #2994d6;
   text-decoration: none; }
 
+.tagline .moderator,
+.green {
+  color: #10a88c !important; }
+
 /* RES Fixes */
 .res .thing .tagline .author.submitter {
   background-color: #4f8ef7 !important;
@@ -2676,24 +2715,43 @@ body.comments-page > .content {
 .morecomments a {
   color: #738491; }
 
+.new-comment .usertext-body {
+  margin: 5px 0; }
+
 /* Sidebar stuff */
 .comments-page .side {
-  margin-top: 400px; }
+  margin-top: 596px; }
+  .comments-page .side::before {
+    top: 362px; }
+  .comments-page .side h1.redditname {
+    top: 692px; }
+  .comments-page .side .subscribers {
+    top: 732px; }
+  .comments-page .side .users-online {
+    top: 714px; }
+  .comments-page .side .subscribe-button {
+    top: 694px; }
+  .comments-page .side #search {
+    top: 760px; }
   .comments-page .side .linkinfo {
     background-color: #fff;
     border: none;
     border-radius: 2px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
-    padding: 16px;
+    padding: 10px;
     position: absolute;
-    top: 494px;
+    top: 262px;
     width: 320px; }
   .comments-page .side .linkinfo .date {
     color: #98abba; }
   .comments-page .side .linkinfo .date::first-letter {
     text-transform: capitalize; }
   .comments-page .side .linkinfo .score {
-    color: #292f34; }
+    color: #292f34;
+    text-transform: uppercase;
+    margin: 0.4em 0; }
+    .comments-page .side .linkinfo .score .number, .comments-page .side .linkinfo .score .word {
+      font-size: 1em; }
 
 .res.comments-page .side {
   margin-top: 414px; }
@@ -2731,11 +2789,6 @@ body.comments-page > .content {
 
 .submit-page #header {
   height: 144px; }
-
-.submit-page #header-bottom-left {
-  left: 50%;
-  margin-left: -262px;
-  top: 86px; }
 
 .submit-page .content {
   margin: 32px auto 0 auto; }
@@ -3031,7 +3084,7 @@ body.comments-page > .content {
 .searchfacets .facet.count:hover {
   text-decoration: none; }
 
-.search-page .morelink {
+.search-page .morelink, .search-page a.helplink {
   top: 384px; }
 
 .search-page .side {
@@ -3270,7 +3323,7 @@ body.comments-page > .content {
   background-color: transparent !important; }
 
 .res .thing .tagline .author.moderator {
-  background-color: #26c555 !important;
+  background-color: #10a88c !important;
   border-radius: 1px;
   padding: 1px 4px; }
 

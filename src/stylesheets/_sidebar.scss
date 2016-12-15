@@ -178,7 +178,7 @@ div.titlebox span.number::after {
     border: 0 solid;
     border-radius: 2px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-    height: 42px;
+    height: 32px;
     line-height: 41px;
     padding: 0 42px 0 16px;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -569,19 +569,47 @@ div.titlebox span.number::after {
   margin: 10px 0 8px 10px;
 }
 
-/* Create Community */
+#ad_main_top {
+  width: 320px !important;
+  height: auto !important;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: $white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 
-.sidebox.create .morelink {
-  background-color: #fff;
-  position: relative;
-  top: 0;
-  width: 100%;
-
-  a {
-    color: $color-link-default;
-    font-size: 14px;
+  &.sponsor-300-250 {
+    height: 270px !important;
   }
 }
+
+/* Create Community */
+
+.sidebox.create {
+  display: none;
+}
+
+a.helplink {
+  @extend .morelink;
+  position: relative;
+  top: auto;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  color: $white;
+}
+
+//.sidebox.create .morelink {
+  //background-color: #fff;
+  //position: relative;
+  //top: 0;
+  //width: 100%;
+
+  //a {
+    //color: $color-link-default;
+    //font-size: 14px;
+  //}
+//}
 
 .sidebox .spacer {
   display: none;

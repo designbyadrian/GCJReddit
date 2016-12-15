@@ -12,7 +12,7 @@
 
 $lighnessChange: 50%;
 
-@mixin moderator-label($nickname,$primaryColor,$secondaryColor:null) {
+@mixin moderator-label($nickname,$primaryColor,$secondaryColor:null,$primaryTextColor:null,$secondaryTextColor:null) {
   .author[href$="#{"/"+$nickname}"]:before {
     @include base-flair-handle($primaryColor)
     content: "Mod ";
@@ -28,6 +28,18 @@ $lighnessChange: 50%;
 
   .author[href$="#{"/"+$nickname}"] {
     @include base-flair($primaryColor);
+  }
+
+  @if ($primaryTextColor) {
+    .author[href$="#{"/"+$nickname}"] {
+      color: $primaryTextColor !important;
+    }
+  }
+
+  @if ($secondaryTextColor) {
+    .author[href$="#{"/"+$nickname}"]:before {
+      color: $secondaryTextColor !important;
+    }
   }
 }
 

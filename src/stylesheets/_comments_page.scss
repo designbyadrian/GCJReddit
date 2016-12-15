@@ -93,14 +93,17 @@ body.comments-page > .content {
   padding: 64px 16px 16px 16px !important;
 }
 
-.usertext button {
+.buttons button,
+.usertext button,
+.usertext-buttons button {
   margin: 4px 16px 8px 0;
   font-weight: normal;
-  border: 1px solid #ccc;
+  border: 1px solid $color-lighter-grey;
   color: $color-grey;
+  background: $white;
 
-  &:hover {
-    border-color: darken($color-grey,5%)
+  &:hover,&:active {
+    border-color: $color-grey
   }
 }
 
@@ -225,12 +228,11 @@ body.comments-page > .content {
   text-decoration: none;
 }
 
-// .tagline .moderator,
-// .green {
-//   color: $color-green !important;
-//   font-weight: bold;
-// }
-//
+.tagline .moderator,
+.green {
+  color: $color-green !important;
+}
+
 // .tagline .submitter {
 //   color: $color-link-default;
 //   font-weight: bold;
@@ -333,19 +335,47 @@ body.comments-page > .content {
   color: $color-medium-grey;
 }
 
+.new-comment .usertext-body {
+  margin: 5px 0;
+}
+
 /* Sidebar stuff */
 
 .comments-page .side {
-  margin-top: 400px;
+  margin-top: 596px;
+
+  &::before {
+    top: 362px;
+  }
+
+  h1.redditname {
+    top: 692px;
+  }
+
+  .subscribers {
+    top: 732px;
+  }
+
+  .users-online {
+    top: 714px;
+  }
+
+  .subscribe-button {
+    top: 694px;
+  }
+
+  #search {
+    top: 760px;
+  }
 
   .linkinfo {
     background-color: #fff;
     border: none;
     border-radius: 2px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
-    padding: 16px;
+    padding: 10px;
     position: absolute;
-    top: 494px;
+    top: 262px;
     width: 320px;
   }
 
@@ -359,6 +389,12 @@ body.comments-page > .content {
 
   .linkinfo .score {
     color: $color-dark-grey;
+    text-transform: uppercase;
+    margin: 0.4em 0;
+
+    .number,.word {
+      font-size: 1em;
+    }
   }
 }
 
