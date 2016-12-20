@@ -88,7 +88,7 @@
   text-indent: 0px; }
 
 .author[href$="/hobdodgeries"]:before {
-  background: #FE2E2E;
+  background: #d52a41;
   color: #fff; }
 
 .author[href$="/hobdodgeries"] {
@@ -1013,11 +1013,11 @@ body:not(.loggedin) #header-bottom-right {
 body > .content {
   margin: 16px 352px 64px 16px;
   padding: 0 0;
-  padding-top: 8px !important; }
+  padding-top: 0px !important; }
 
 .link {
   margin: 0;
-  padding: 12px 0;
+  padding: 14px 0;
   position: relative;
   border-top: 1px solid #edf1f3; }
   .link:first-child {
@@ -1132,8 +1132,8 @@ body > .content .link .rank,
 .stickied .thumbnail {
   background: url(%%spritesheet%%) -96px -48px;
   height: 76px;
-  margin-bottom: -13px;
-  margin-top: -5px; }
+  margin-bottom: -15px;
+  margin-top: 0px; }
 
 .over18.link .thumbnail {
   background: url(%%spritesheet%%) -176px -104px !important; }
@@ -2048,7 +2048,7 @@ div.titlebox span.number::after {
     border-radius: 2px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     height: 32px;
-    line-height: 41px;
+    line-height: 30px;
     padding: 0 42px 0 16px;
     -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2368,6 +2368,10 @@ div.titlebox span.number::after {
 .md hr {
   border: solid 1px #e5e5e5; }
 
+.side .md :last-child {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; }
+
 .titlebox .bottom {
   display: none; }
 
@@ -2384,7 +2388,7 @@ div.titlebox span.number::after {
 
 .side .sidecontentbox .content {
   border: none;
-  padding: 8px 0; }
+  padding: 8px 0 0 0; }
 
 .icon-menu a {
   background-color: transparent; }
@@ -2448,9 +2452,6 @@ a.helplink {
   text-align: center;
   text-transform: none;
   width: 320px; }
-
-body.comments-page > .content {
-  margin-top: 8px; }
 
 .comments-page .link .usertext .md {
   margin-bottom: 0; }
@@ -2637,10 +2638,6 @@ body.comments-page > .content {
   color: #2994d6;
   text-decoration: none; }
 
-.tagline .moderator,
-.green {
-  color: #10a88c !important; }
-
 /* RES Fixes */
 .res .thing .tagline .author.submitter {
   background-color: #4f8ef7 !important;
@@ -2687,7 +2684,7 @@ body.comments-page > .content {
 
 /* Deleted comment */
 .usertext-body {
-  margin: 0.5em 0; }
+  margin: 0.5em 0 0 0; }
 
 .usertext.grayed .usertext-body {
   background-color: transparent;
@@ -2905,10 +2902,10 @@ body.comments-page > .content {
   display: none; }
 
 .search-page #search {
-  left: 36px;
+  right: -352px;
   padding: 0;
   position: absolute;
-  top: -128px; }
+  top: 0px; }
   .search-page #search input[type=text] {
     min-width: 320px;
     width: 320px; }
@@ -2952,7 +2949,7 @@ body.comments-page > .content {
   background-repeat: no-repeat;
   font-size: 0;
   height: 24px;
-  left: 324px;
+  left: 318px;
   overflow: hidden;
   position: absolute;
   top: 8px;
@@ -2986,6 +2983,8 @@ body.comments-page > .content {
     cursor: pointer;
     display: inline-block;
     text-decoration: none; }
+    .combined-search-page .search-result-group .search-menu .dropdown.lightdrop .selected::after {
+      display: none; }
 
 /* Subreddits */
 .combined-search-page .search-result-listing .search-result-subreddit {
@@ -3088,7 +3087,7 @@ body.comments-page > .content {
   top: 384px; }
 
 .search-page .side {
-  margin-top: 264px; }
+  margin-top: 502px; }
 
 /* Wiki Page */
 .wiki-page .wikititle {
@@ -3222,12 +3221,23 @@ body.comments-page > .content {
 
 #images {
   background-color: #fff;
-  height: 800px;
   padding: 8px 0;
   position: relative; }
+  #images .image-preview-list {
+    margin: 0; }
+    #images .image-preview-list li {
+      width: 50%;
+      padding-right: 10px; }
 
 #images #image-upload {
   margin: 0 0 4em 0; }
+
+#preview-table {
+  background-color: #fff;
+  padding: 10px; }
+  #preview-table > table {
+    width: 100%;
+    margin: 0; }
 
 .flair {
   display: inline-block;

@@ -21,10 +21,10 @@
 }
 
 .search-page #search {
-  left: 36px;
+  right: -352px;
   padding: 0;
   position: absolute;
-  top: -128px;
+  top: 0px;
 
   input[type=text] {
     min-width: 320px;
@@ -75,7 +75,7 @@
   background-repeat: no-repeat;
   font-size: 0;
   height: 24px;
-  left: 324px;
+  left: 318px;
   overflow: hidden;
   position: absolute;
   top: 8px;
@@ -119,6 +119,10 @@
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -250,5 +254,5 @@
 }
 
 .search-page .side {
-  margin-top: 264px;
+  margin-top: 502px;
 }

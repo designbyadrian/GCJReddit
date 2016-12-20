@@ -179,7 +179,7 @@ div.titlebox span.number::after {
     border-radius: 2px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     height: 32px;
-    line-height: 41px;
+    line-height: 30px;
     padding: 0 42px 0 16px;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 320px;
@@ -521,6 +521,11 @@ div.titlebox span.number::after {
   border: solid 1px #e5e5e5;
 }
 
+.side .md :last-child {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .titlebox .bottom {
   display: none;
 }
@@ -543,7 +548,7 @@ div.titlebox span.number::after {
 
 .side .sidecontentbox .content {
   border: none;
-  padding: 8px 0;
+  padding: 8px 0 0 0;
 }
 
 .icon-menu a {

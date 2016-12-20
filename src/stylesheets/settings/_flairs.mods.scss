@@ -5,7 +5,7 @@
 @include op-label($color-blue);
 
 /* Mods */
-@include moderator-label("hobdodgeries",#492d9d,#FE2E2E);
+@include moderator-label("hobdodgeries",#492d9d,hsl(352, 67%, 50%));
 
 @include moderator-label("smittyjaja",#FF00FF);
 

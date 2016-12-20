@@ -3,12 +3,12 @@
 body > .content {
   margin: 16px 352px 64px 16px;
   padding: 0 0;
-  padding-top: 8px !important;
+  padding-top: 0px !important;
 }
 
 .link {
   margin: 0;
-  padding: 12px 0;
+  padding: 14px 0;
   position: relative;
   border-top: 1px solid #edf1f3;
 
@@ -132,8 +132,8 @@ body > .content .link .rank,
 .stickied .thumbnail {
   background: url(%%spritesheet%%) -96px -48px;
   height: 76px;
-  margin-bottom: -13px;
-  margin-top: -5px;
+  margin-bottom: -15px;
+  margin-top: 0px;
 }
 
 .over18.link .thumbnail {

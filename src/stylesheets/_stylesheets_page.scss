@@ -20,11 +20,29 @@
 
 #images {
   background-color: #fff;
-  height: 800px;
   padding: 8px 0;
   position: relative;
+
+  .image-preview-list {
+    margin: 0;
+
+    li {
+      width: 50%;
+      padding-right: 10px;
+    }
+  }
 }
 
 #images #image-upload {
   margin: 0 0 4em 0;
+}
+
+#preview-table {
+  background-color: $white;
+  padding: 10px;
+
+  & > table {
+    width: 100%;
+    margin: 0;
+  }
 }
