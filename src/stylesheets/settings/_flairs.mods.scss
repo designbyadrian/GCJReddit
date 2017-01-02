@@ -9,24 +9,27 @@
 
 @include moderator-label("smittyjaja",#FF00FF);
 
-@include moderator-label("subpleiades",#00FF00);
+@include moderator-label("subpleiades",#1fec6b);
 
-@include moderator-label("Python2k10",#0000FF);
+@include moderator-label("Python2k10",#2323e7);
 
-@include moderator-label("DaedalusInGame",#FFFF00);
+@include moderator-label("DaedalusInGame",#edbd13);
 
-@include moderator-label("Langston_huge",#2EFEF7);
+@include moderator-label("Langston_huge",#52eee9);
 
 @include moderator-label("Sexyphobe",#111);
 
 @include moderator-label("thinkadrian",hsl(207, 52%, 95%),hsl(208, 20%, 83%),cornflowerblue,#fff);
 
-@include moderator-label("-CdG-Luck",#FF6347);
+@include moderator-label("-CdG-Luck",#e9657d);
 
 /* Distingiushed gentlemen */
 @include distinguished-label($color-green);
 
-/*Gives Automod a name*/
-a.author[href$="AutoModerator"]:after{
-  content:" (60fps bot)";
+@include moderator-label("AutoModerator",$color-green);
+a.author[href$="AutoModerator"] {
+  color: $white;
+  &:after{
+    content:" (60fps bot)";
+  }
 }

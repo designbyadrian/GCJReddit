@@ -44,7 +44,7 @@
   }
 
   .dropdown.lightdrop .selected::after {
-    content: " ▼";
+    content: "  ";
     font-family: "Lucida Grande",sans-serif;
     font-size: 8px;
   }
@@ -385,11 +385,14 @@
 
   .linkinfo .score {
     color: $color-dark-grey;
-    text-transform: uppercase;
     margin: 0.4em 0;
 
     .number,.word {
       font-size: 1em;
+    }
+
+    .word {
+      text-transform: uppercase;
     }
   }
 }

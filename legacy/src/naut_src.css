@@ -149,7 +149,7 @@
 
 					#sr-header-area .dropdown.srdrop .selected:after {
 						position: relative;
-						content: "▼";
+						content: " ";
 						margin-left: 4px;
 						font-size: 10px;
 					}
@@ -1205,7 +1205,7 @@
 					}
 
 						.dropdown.lightdrop .selected:hover {background-color: rgba(0,0,0,0.05);}
-						.dropdown.lightdrop .selected:after {content: " ▼";}
+						.dropdown.lightdrop .selected:after {content: "  ";}
 						.drop-choices.lightdrop {margin-top: 8px;}
 
 					/* RES Popup */
@@ -1884,7 +1884,7 @@
 					}
 
 						.commentarea .menuarea .dropdown.lightdrop .selected:hover {color: #4F8EF7;}
-						.commentarea .menuarea .dropdown.lightdrop .selected:after {content: "▼"}
+						.commentarea .menuarea .dropdown.lightdrop .selected:after {content: " "}
 
 
 						.drop-choices.lightdrop {

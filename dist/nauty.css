@@ -13,11 +13,12 @@
 
 /* ------ BRAVE LOGO (change white or black) --- */
 #header .pagename a {
-  background-image: url(%%bravelogowhite%%); }
+  opacity: 0.25;
+  background-image: url(%%bravelogoblack%%); }
   #header .pagename a:before {
-    background-image: url(%%bravepart1white%%); }
+    background-image: url(%%bravepart1black%%); }
   #header .pagename a:after {
-    background-image: url(%%bravepart2white%%); }
+    background-image: url(%%bravepart2black%%); }
 
 /* ------ ARROWS -- see "heads.png" --- */
 .arrow.upmod {
@@ -141,7 +142,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #00e600;
+  background-color: #13df5e;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -152,10 +153,10 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #00FF00;
+  background-color: #1fec6b;
   color: #fff !important; }
   .author[href$="/subpleiades"]:hover {
-    background-color: #00e600; }
+    background-color: #13df5e; }
 
 .author[href$="/Python2k10"]:before {
   content: '-';
@@ -169,7 +170,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #0000e6;
+  background-color: #1818d9;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -180,10 +181,10 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #0000FF;
+  background-color: #2323e7;
   color: #fff !important; }
   .author[href$="/Python2k10"]:hover {
-    background-color: #0000e6; }
+    background-color: #1818d9; }
 
 .author[href$="/DaedalusInGame"]:before {
   content: '-';
@@ -197,7 +198,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #e6e600;
+  background-color: #d6ab10;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -208,10 +209,10 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #FFFF00;
+  background-color: #edbd13;
   color: #fff !important; }
   .author[href$="/DaedalusInGame"]:hover {
-    background-color: #e6e600; }
+    background-color: #d6ab10; }
 
 .author[href$="/Langston_huge"]:before {
   content: '-';
@@ -225,7 +226,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #15fef6;
+  background-color: #3bece6;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -236,10 +237,10 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #2EFEF7;
+  background-color: #52eee9;
   color: #fff !important; }
   .author[href$="/Langston_huge"]:hover {
-    background-color: #15fef6; }
+    background-color: #3bece6; }
 
 .author[href$="/Sexyphobe"]:before {
   content: '-';
@@ -319,7 +320,7 @@
   display: inline-block;
   padding: 3px 5px 3px 7px;
   margin: -5px 6px -5px -6px;
-  background-color: #ff4d2e;
+  background-color: #e64f6a;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   content: "Mod ";
@@ -330,10 +331,10 @@
   padding: 3px 6px;
   font-size: 10px;
   border-radius: 32px;
-  background-color: #FF6347;
+  background-color: #e9657d;
   color: #fff !important; }
   .author[href$="/-CdG-Luck"]:hover {
-    background-color: #ff4d2e; }
+    background-color: #e64f6a; }
 
 /* Distingiushed gentlemen */
 .stickied .author:before,
@@ -367,9 +368,41 @@
   .author.moderator:hover {
     background-color: #0d9179; }
 
-/*Gives Automod a name*/
-a.author[href$="AutoModerator"]:after {
-  content: " (60fps bot)"; }
+.stickied .author {
+  color: #fff; }
+
+.author[href$="/AutoModerator"]:before {
+  content: '-';
+  text-indent: -100px;
+  font-size: 9px;
+  font-weight: bold;
+  font-family: "Lucida Grande",sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: #fff !important;
+  display: inline-block;
+  padding: 3px 5px 3px 7px;
+  margin: -5px 6px -5px -6px;
+  background-color: #0d9179;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  content: "Mod ";
+  text-indent: 0px; }
+
+.author[href$="/AutoModerator"] {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 10px;
+  border-radius: 32px;
+  background-color: #10a88c;
+  color: #fff !important; }
+  .author[href$="/AutoModerator"]:hover {
+    background-color: #0d9179; }
+
+a.author[href$="AutoModerator"] {
+  color: #fff; }
+  a.author[href$="AutoModerator"]:after {
+    content: " (60fps bot)"; }
 
 .flair.flair-Champagne2Flair {
   width: 16px;
@@ -737,7 +770,7 @@ a[href$="/spoiler"]:active {
   #sr-header-area .dropdown.srdrop .selected:hover {
     text-decoration: underline; }
   #sr-header-area .dropdown.srdrop .selected::after {
-    content: "▼";
+    content: " ";
     font-size: 10px;
     margin-left: 4px;
     position: relative; }
@@ -1323,7 +1356,8 @@ body .content .sitetable .link .title a:hover {
     top: -1px;
     visibility: visible; }
   .link .entry .tagline .userattrs a.moderator {
-    background-color: #10a88c; }
+    background-color: #10a88c;
+    color: #fff; }
 
 .RESUserTagImage {
   background-image: url(%%spritesheet%%) !important;
@@ -1483,7 +1517,8 @@ a.pretty-button.positive {
 
 a.pretty-button.negative {
   background-color: #fb797e;
-  border-color: #fb797e; }
+  border-color: #fb797e;
+  color: #fff !important; }
   a.pretty-button.negative:hover {
     background-color: #fc979b;
     border-color: #fc979b; }
@@ -1491,14 +1526,15 @@ a.pretty-button.negative {
 a.pretty-button.neutral {
   background-color: #ddd;
   border-color: #ddd;
-  color: #4a4f57; }
+  color: #4a4f57 !important; }
   a.pretty-button.neutral:hover {
     background-color: #ececec;
     border-color: #ececec; }
 
 a.pretty-button.positive {
   background-color: #1ecd97;
-  border-color: #1ecd97; }
+  border-color: #1ecd97;
+  color: #fff !important; }
 
 a.pretty-button.positive:hover {
   background-color: #2ae0a8;
@@ -1537,13 +1573,27 @@ ul.report-reasons {
   border-color: #10a88c !important; }
 
 .tagline .stickied-tagline {
-  color: #b3b3b3;
   cursor: help; }
 
 /* Sticky Comment */
-.stickied.comment > .entry a,
+.stickied.comment {
+  position: relative; }
+  .stickied.comment:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #10a88c transparent transparent; }
+
 .stickied.comment .tagline .stickied-tagline {
   color: #10a88c !important; }
+
+.submitter.moderator {
+  color: #fff !important; }
 
 /* Ad */
 .content .spacer {
@@ -1829,7 +1879,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .dropdown.lightdrop .selected::after {
-  content: " ▼"; }
+  content: "  "; }
 
 .drop-choices.lightdrop {
   margin-top: 8px; }
@@ -2485,7 +2535,7 @@ a.helplink {
   .commentarea .menuarea .dropdown.lightdrop .selected:hover {
     color: #4f8ef7; }
   .commentarea .menuarea .dropdown.lightdrop .selected::after {
-    content: " ▼";
+    content: "  ";
     font-family: "Lucida Grande",sans-serif;
     font-size: 8px; }
 
@@ -2745,10 +2795,11 @@ a.helplink {
     text-transform: capitalize; }
   .comments-page .side .linkinfo .score {
     color: #292f34;
-    text-transform: uppercase;
     margin: 0.4em 0; }
     .comments-page .side .linkinfo .score .number, .comments-page .side .linkinfo .score .word {
       font-size: 1em; }
+    .comments-page .side .linkinfo .score .word {
+      text-transform: uppercase; }
 
 .res.comments-page .side {
   margin-top: 414px; }

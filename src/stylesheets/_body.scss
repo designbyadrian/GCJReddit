@@ -284,6 +284,7 @@ body .content .sitetable .link .title a:hover {
 
     a.moderator {
       background-color: $color-green;
+      color: $white;
     }
   }
 }
@@ -475,6 +476,7 @@ a.pretty-button.positive {
 a.pretty-button.negative {
   background-color: $color-pretty-button-negative;
   border-color: $color-pretty-button-negative;
+  color: $white !important;
 
   &:hover {
     background-color: lighten($color-pretty-button-negative, 6%);
@@ -485,7 +487,7 @@ a.pretty-button.negative {
 a.pretty-button.neutral {
   background-color: $color-pretty-button-neutral;
   border-color: $color-pretty-button-neutral;
-  color: #4a4f57;
+  color: #4a4f57 !important;
 
   &:hover {
     background-color: lighten($color-pretty-button-neutral, 6%);
@@ -496,6 +498,7 @@ a.pretty-button.neutral {
 a.pretty-button.positive {
   background-color: $color-pretty-button-positive;
   border-color: $color-pretty-button-positive;
+  color: $white !important;
 }
 
 a.pretty-button.positive:hover {
@@ -543,15 +546,40 @@ ul.report-reasons {
 }
 
 .tagline .stickied-tagline {
-  color: #b3b3b3;
+  //color: #b3b3b3;
   cursor: help;
 }
 
 /* Sticky Comment */
 
-.stickied.comment > .entry a,
+.stickied.comment {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent $color-stickied transparent transparent;
+  }
+}
+
+//.stickied.comment > .entry a,
+//.tagline .moderator, .green,
+//.search-result-meta .moderator {
+  //co
+//}
+//.tagline .moderator,
 .stickied.comment .tagline .stickied-tagline {
   color: $color-stickied !important;
+}
+
+.submitter.moderator {
+  color: $white !important;
 }
 
 /* Ad */
@@ -917,7 +945,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 }
 
 .dropdown.lightdrop .selected::after {
-  content: " ▼";
+  content: "  ";
 }
 
 .drop-choices.lightdrop {

@@ -10,14 +10,15 @@
 
 #header .pagename {
   a {
-    background-image: url(%%bravelogowhite%%);
+    opacity: 0.25;
+    background-image: url(%%bravelogoblack%%);
 
     &:before {
-      background-image: url(%%bravepart1white%%);
+      background-image: url(%%bravepart1black%%);
     }
 
     &:after {
-      background-image: url(%%bravepart2white%%);
+      background-image: url(%%bravepart2black%%);
     }
   }
 }

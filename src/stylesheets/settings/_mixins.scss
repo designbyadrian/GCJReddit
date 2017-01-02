@@ -67,6 +67,10 @@ $lighnessChange: 50%;
   .author.moderator {
     @include base-flair($bgColor);
   }
+
+  .stickied .author {
+    color: $white;
+  }
 }
 
 @mixin user-label($bgColor) {
