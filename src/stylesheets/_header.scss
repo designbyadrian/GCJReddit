@@ -143,20 +143,20 @@ body:not(.loggedin) #sr-header-area .width-clip {
     text-indent: -9999px;
     top: 50%;
     left: 50%;
-    width: 300px;
-    height: 72px;
+    width: 273px;
+    height: 69px;
     background-size: cover;
     display: block;
     position: absolute;
-    margin-top: -32px;
-    margin-left: -150px;
+    margin-top: -35px;
+    margin-left: -134px;
 
     &:before {
       content: '';
       position: absolute;
       display: block;
-      width: 50px;
-      height: 67px;
+      width: 40px;
+      height: 51px;
       top: 13px;
       left: 18px;
       background-size: cover;
