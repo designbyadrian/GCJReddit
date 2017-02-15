@@ -14,7 +14,6 @@
 /* Subreddits Bar */
 
 #sr-header-area {
-  background-color: rgba(0, 0, 0, 0.08);
   border: none;
   height: 24px;
   line-height: 23px;
@@ -144,36 +143,24 @@ body:not(.loggedin) #sr-header-area .width-clip {
     text-indent: -9999px;
     top: 50%;
     left: 50%;
-    width: 92px;
-    height: 17px;
+    width: 300px;
+    height: 72px;
     background-size: cover;
     display: block;
     position: absolute;
+    margin-top: -32px;
+    margin-left: -150px;
 
     &:before {
       content: '';
       position: absolute;
       display: block;
-      width: 63px;
-      height: 61px;
-      top: -9px;
-      left: -70px;
+      width: 50px;
+      height: 67px;
+      top: 13px;
+      left: 18px;
       background-size: cover;
-      transform-origin: 44px 18px;
-      animation: logopart1 2000ms linear infinite forwards;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 92px;
-      height: 50px;
-      top: -4px;
-      left: -140px;
-      background-size: cover;
-      transform-origin: 12px 13px;
-      animation: logopart2 2000ms linear infinite forwards;
+      animation: logoHand 9000ms 3000ms linear infinite forwards;
     }
   }
 }

@@ -7,6 +7,7 @@ $color-green:  hsl(169, 83%, 36%);
 $color-purple: hsl(264, 67%, 50%);
 $color-orange: hsl(41, 76%, 47%);
 $color-yellow: hsl(55, 67%, 46%);
+$color-brown:  hsl(17, 30%, 54%);
 $color-grey: #4d5763;
 $color-dark-grey: #292f34;
 $color-lighter-grey: #98abba;
@@ -34,12 +35,15 @@ $color-link-visited: $color-medium-grey;
 $color-locked: $color-green;
 $color-nsfw-text: $white;
 $color-nsfw: #ea4876;
-$color-pretty-button-negative: #fb797e;
+$color-pretty-button-negative: $color-red;
 $color-pretty-button-neutral: #ddd;
-$color-pretty-button-positive: #1ecd97;
+$color-pretty-button-positive: $color-green;
+$color-pretty-button-poop: $color-brown;
 $color-pretty-button-text: $white;
 $color-selection: $color-grey;
 $color-stickied: $color-green;
 $color-toggle-text: $white;
 $color-toggle: #4f8ef7;
 $color-upvote: #ff6422;
+
+$text-color: $color-dark-grey

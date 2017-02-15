@@ -29,7 +29,12 @@
 @include moderator-label("AutoModerator",$color-green);
 a.author[href$="AutoModerator"] {
   color: $white;
+
+  &:before {
+    content: "BOT " !important;
+  }
+
   &:after{
-    content:" (60fps bot)";
+    content:" (120 FPS)";
   }
 }

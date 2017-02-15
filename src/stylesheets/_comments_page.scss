@@ -115,7 +115,7 @@
 }
 
 .commentarea > .usertext textarea:not(:focus) {
-  background: url(%%commentboxbg%%) no-repeat 50% 50%;
+  background: url(%%commentboxbg%%) #fff no-repeat 50% 50%;
 }
 
 .usertext .bottom-area {
@@ -258,7 +258,7 @@
 /* Comment Body Text */
 
 .comment .usertext .md {
-  color: $color-dark-grey;
+  color: $text-color;
 }
 
 .md {
@@ -282,13 +282,20 @@
   h1,
   h2 {
     border: none;
-    color: $color-dark-grey;
+    color: $text-color;
     margin: 0.5em 0 0.25em 0;
   }
 
   h3 {
-    color: $color-dark-grey;
+    color: $text-color;
     margin: 16px 0 0 0;
+  }
+}
+
+.comment[data-author="AutoModerator"] {
+  em {
+    font-size: 0.8em;
+    color: lighten($text-color,20%);
   }
 }
 
@@ -399,4 +406,18 @@
 
 .res.comments-page .side {
   margin-top: 414px;
+}
+
+#noresults {
+  color: $text-color;
+  font-size: 14px;
+  width: 100%;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
+
+  &:after {
+    content: "! Hoping for some upvote bonanza, but it sure didn't work out, eh?";
+  }
 }

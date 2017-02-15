@@ -1,0 +1,27 @@
+/*
+ * GCJ Theme based on Naut.
+ * Read more on https://github.com/designbyadrian/GCJReddit
+ */
+
+/* --- custom rules --- */
+
+@import 'settings/settings';
+
+/* --- end of custom rules --- */
+
+@import 'base';
+@import 'header';
+@import 'body';
+@import 'sidebar';
+@import 'comments_page';
+@import 'read_next';
+@import 'submit_page';
+@import 'search_page';
+@import 'wiki_page';
+@import 'settings_page';
+@import 'stylesheets_page';
+@import 'flair';
+@import 'comments';
+@import 'footer';
+@import 'res';
+@import 'animations';

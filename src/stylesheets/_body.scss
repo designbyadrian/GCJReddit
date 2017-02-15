@@ -55,7 +55,7 @@ body > .content .link .rank,
   background-image: url(%%heads%%) !important;
   margin: 0 0 0 0;
   width: 32px;
-  height: 22px;
+  height: 32px;
 
   /* Upvotes */
 
@@ -101,23 +101,21 @@ body > .content .link .rank,
 /* Thumbnails */
 
 .thumbnail {
-  height: 56px;
+  min-height: 56px;
   margin: 0 10px 0 0;
   width: 80px;
 }
 
 .thumbnail img {
-  max-height: 56px;
-  max-width: none;
-  min-height: 56px;
-  min-width: 80px;
+  width: 80px;
 }
 
 .stickied .thumbnail,
 .thumbnail.default,
 .thumbnail.self,
-.over18.link .thumbnail {
-  height: 56px;
+.over18.link .thumbnail,
+.spoiler.link .thumbnail {
+  min-height: 56px;
   width: 80px;
 }
 
@@ -141,6 +139,14 @@ body > .content .link .rank,
 }
 
 .over18.link .thumbnail img {
+  display: none;
+}
+
+.spoiler.link .thumbnail {
+  background: url(%%spritesheet%%) -176px -216px !important;
+}
+
+.spoiler.link .thumbnail img {
   display: none;
 }
 
@@ -271,15 +277,25 @@ body .content .sitetable .link .title a:hover {
     visibility: hidden;
 
     a {
-      background-color: #f00;
-      color: #fff !important;
+      background: $color-medium-grey;
+      color: #fff;
       cursor: help;
       font-size: 10px;
       margin-left: 2px;
-      padding: 1px 3px 1px 2px;
+      padding: 1px 3px;
       position: relative;
-      top: -1px;
       visibility: visible;
+      border-radius: 2px;
+    }
+
+    .cakeday {
+      font-size: 1.2em;
+      padding: 0;
+      background: none;
+      color: inherit !important;
+      text-indent: 0;
+      top: -0.35em;
+      margin-right: 0.1em;
     }
 
     a.moderator {
@@ -473,7 +489,9 @@ a.pretty-button.positive {
   transition: all 0.1s ease;
 }
 
-a.pretty-button.negative {
+a.pretty-button.negative,
+a.pretty-button[data-event-action='remove'],
+a.pretty-button.neutral[data-event-action='remove'] {
   background-color: $color-pretty-button-negative;
   border-color: $color-pretty-button-negative;
   color: $white !important;
@@ -499,11 +517,23 @@ a.pretty-button.positive {
   background-color: $color-pretty-button-positive;
   border-color: $color-pretty-button-positive;
   color: $white !important;
+
+  &:hover {
+    background-color: lighten($color-pretty-button-positive, 6%);
+    border-color: lighten($color-pretty-button-positive, 6%);
+  }
 }
 
-a.pretty-button.positive:hover {
-  background-color: lighten($color-pretty-button-positive, 6%);
-  border-color: lighten($color-pretty-button-positive, 6%);
+a.pretty-button.poop,
+a.pretty-button[data-event-action='spam'] {
+  background-color: $color-pretty-button-poop;
+  border-color: $color-pretty-button-poop;
+  color: $white !important;
+
+  &:hover {
+    background-color: lighten($color-pretty-button-poop, 6%);
+    border-color: lighten($color-pretty-button-poop, 6%);
+  }
 }
 
 a.pretty-button.positive.pressed,
@@ -546,7 +576,7 @@ ul.report-reasons {
 }
 
 .tagline .stickied-tagline {
-  //color: #b3b3b3;
+  color: $color-green;
   cursor: help;
 }
 

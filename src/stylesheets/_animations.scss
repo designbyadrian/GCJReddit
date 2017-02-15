@@ -65,71 +65,21 @@
   }
 }
 
-@keyframes logopart1 {
-  0% {
-    transform: rotate(0);
+@keyframes logoHand {
+  0%, 4%, 8%, 12%, 18%, 20%, 22%, 24%, 26%, 40%, 41%, 42%, 43%, 44%, 45%, 60%, 100% {
+    top: 13px;
+    left: 18px;
   }
-  50% {
-    transform: rotate(0);
+  19%, 21%, 23%, 25% {
+    top: 18px;
+    left: 28px;
   }
-  80% {
-    transform: rotate(2deg);
-  }
-  82% {
-    transform: rotate(0deg);
-  }
-  84% {
-    transform: rotate(2deg);
-  }
-  86% {
-    transform: rotate(0deg);
-  }
-  88% {
-    transform: rotate(2deg);
-  }
-  90% {
-    transform: rotate(0deg);
-  }
-  95% {
-    transform: rotate(-2deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  2%, 6%, 10%, 40.5%, 41.5%, 42.5%, 43.5%, 44.5%, 45.5%, 50% {
+    top: 24px;
+    left: 48px;
   }
 }
 
-@keyframes logopart2 {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  80% {
-    transform: rotate(-2deg);
-  }
-  82% {
-    transform: rotate(0deg);
-  }
-  84% {
-    transform: rotate(-2deg);
-  }
-  86% {
-    transform: rotate(0deg);
-  }
-  88% {
-    transform: rotate(-2deg);
-  }
-  90% {
-    transform: rotate(0deg);
-  }
-  95% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 @keyframes pip_is_dead {
   0% {

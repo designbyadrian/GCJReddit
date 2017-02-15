@@ -10,24 +10,31 @@
 
 #header .pagename {
   a {
-    opacity: 0.25;
-    background-image: url(%%bravelogoblack%%);
+    opacity: 1;
+    background-image: url(%%brave-logo-white%%);
 
     &:before {
-      background-image: url(%%bravepart1black%%);
-    }
-
-    &:after {
-      background-image: url(%%bravepart2black%%);
+      background-image: url(%%brave-hand-white%%);
     }
   }
 }
 
+/* ------ TOP SUBREDDIT LINK MENU --- */
+
+#sr-header-area {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+// #sr-header-area .sr-bar a,
+// #header-bottom-right a{
+//   color: $color-grey !important;
+// }
+
 /* ------ ARROWS -- see "heads.png" --- */
 
 .arrow {
-  &.upmod {background-position: -32px -32px;}
-  &.downmod {background-position: -96px -0px;}
+  &.upmod {background-position: 0px 0px;}
+  &.downmod {background-position: -64px 0px;}
 }
 
 /* ------ SIDEBAR HEADER FACES - see "heads.png" --- */
@@ -37,7 +44,7 @@
 }
 
 .side .titlebox .md h2::before {
-  background-position: -0px -0px;
+  background-position: -32px -32px;
 }
 
 /* ------ BULLET LIST FACES - see "heads.png" --- */
