@@ -175,6 +175,12 @@
 	background-position: 0 -574px;
 }
 
+.flair.flair-LinkleFlair {
+	width: 26px;
+	height: 26px;
+	background-position: 0 -596px;
+}
+
 
 .flair.flair-redflair {@include user-label($color-red)}
 .flair.flair-purpleflair {@include user-label($color-purple)}

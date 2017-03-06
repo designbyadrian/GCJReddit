@@ -556,6 +556,11 @@ a.author[href$="AutoModerator"] {
   height: 24px;
   background-position: 0 -574px; }
 
+.flair.flair-LinkleFlair {
+  width: 26px;
+  height: 26px;
+  background-position: 0 -596px; }
+
 .flair.flair-redflair {
   display: inline-block;
   padding: 3px 6px;
