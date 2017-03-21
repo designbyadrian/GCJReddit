@@ -104,14 +104,15 @@
 }
 
 .commentarea .usertext-edit {
+
   max-width: 504px;
   width: 100%;
-}
 
-.commentarea .usertext-edit textarea {
-  position: relative;
-  width: 100%;
-  z-index: 999;
+  textarea {
+    position: relative;
+    width: 100% !important;
+    z-index: 999;
+  }
 }
 
 .commentarea > .usertext textarea:not(:focus) {
@@ -120,6 +121,14 @@
 
 .usertext .bottom-area {
   width: 504px;
+}
+
+.comment .usertext-edit {
+  max-width: initial;
+}
+
+.comment .usertext .bottom-area {
+  width: 100%;
 }
 
 .usertext .bottom-area a.reddiquette {
