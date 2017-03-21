@@ -148,8 +148,8 @@
 
 .commentarea .child .thing {
   box-shadow: none;
-  margin: 12px 0 0 0;
-  padding: 4px;
+  margin: 12px 0 12px -20px;
+  padding: 0 0 0 20px;
 }
 
 .commentarea .comment .midcol {
@@ -177,40 +177,50 @@
   margin-left: 0;
 }
 
-.comment .entry .tagline {
-  color: $color-lighter-grey;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+.comment,.comment.collapsed {
+  .entry .tagline {
+    color: $color-lighter-grey;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+
+    :not(.entry) {
+      font-style: inherit !important;
+    }
+  }
 }
 
-.comment .expand {
-  background-color: transparent;
-  color: $color-lighter-grey;
-  transition: all 0.15s ease;
-}
+.comment {
+  position: relative;
 
-.comment .expand:hover {
-  background-color: #edf1f3;
-  color: $color-lighter-grey;
-  text-decoration: none;
-}
+  .child {
+    padding-left: 20px;
+  }
 
-.comment.collapsed a.expand::after {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 2px;
-  color: transparent;
-  content: "ah ";
-  display: block;
-  height: 50px;
-  left: 16px;
-  margin-top: -34px;
-  position: absolute;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc(100% - 368px);
-}
+  a.expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 
-.comment.collapsed a.expand:hover::after {
-  background-color: rgba(0, 0, 0, 0.04);
+    background-color: transparent;
+    color: $color-lighter-grey;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: $color-lighter-grey;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &.collapsed {
+    line-height: normal;
+  }
 }
 
 .comment .author {
