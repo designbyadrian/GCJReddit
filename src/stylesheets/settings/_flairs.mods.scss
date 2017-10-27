@@ -5,23 +5,31 @@
 @include op-label($color-blue);
 
 /* Mods */
-@include moderator-label("hobdodgeries",#492d9d,hsl(352, 67%, 50%));
+@include moderator-label("hobdodgeries",#492d9d, $color-red);
 
-@include moderator-label("smittyjaja",#FF00FF);
+@include moderator-label("smittyjaja",#d646d6);
 
-@include moderator-label("subpleiades",#1fec6b);
+@include moderator-label("Python2k10",#3844e8);
 
-@include moderator-label("Python2k10",#2323e7);
+@include moderator-label("DaedalusInGame",#edb013);
 
-@include moderator-label("DaedalusInGame",#edbd13);
+@include moderator-label("Langston_huge",#38beba);
 
-@include moderator-label("Langston_huge",#52eee9);
-
-@include moderator-label("Sexyphobe",#111);
+@include moderator-label("Sexyphobe",#232325);
 
 @include moderator-label("thinkadrian",hsl(207, 52%, 95%),hsl(208, 20%, 83%),cornflowerblue,#fff);
 
 @include moderator-label("-CdG-Luck",#e9657d);
+
+@include moderator-label("zerosum5252", $color-discord-greyple, $color-discord-blue, $color-discord-dark, #fff);
+
+@include moderator-label("the_drugs_liker",#e9657d, $color-red);
+
+@include moderator-label("tr00perman567", $color-discord-greyple, $color-discord-blue, $color-discord-dark, #fff);
+
+a.author[href$="subpleiades"] {
+  color: #ddd;
+}
 
 /* Distingiushed gentlemen */
 @include distinguished-label($color-green);
@@ -36,5 +44,18 @@ a.author[href$="AutoModerator"] {
 
   &:after{
     content:" (120 FPS)";
+  }
+}
+
+@include moderator-label("SnapshillBot",$color-lighter-grey);
+a.author[href$="SnapshillBot"] {
+  color: $white;
+
+  &:before {
+    content: "BOT " !important;
+  }
+
+  &:after{
+    content:" (30 FPS)";
   }
 }

@@ -39,7 +39,7 @@ gulp.task('lint', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/stylesheets/**/*.scss', ['lint', 'build']);
+  gulp.watch('src/stylesheets/**/*.scss', ['build']);
 });
 
-gulp.task('default', ['lint', 'build']);
+gulp.task('default', ['build', 'watch']);
